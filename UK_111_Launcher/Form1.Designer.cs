@@ -51,8 +51,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.nsTheme1.SuspendLayout();
             this.nsTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -111,8 +109,6 @@
             // 
             this.nsTabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.nsTabControl1.Controls.Add(this.tabPage1);
-            this.nsTabControl1.Controls.Add(this.tabPage2);
-            this.nsTabControl1.Controls.Add(this.tabPage3);
             this.nsTabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.nsTabControl1.ItemSize = new System.Drawing.Size(28, 115);
             this.nsTabControl1.Location = new System.Drawing.Point(3, 32);
@@ -332,25 +328,6 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage2.Location = new System.Drawing.Point(119, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1270, 664);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Staff";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage3.Location = new System.Drawing.Point(119, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1270, 664);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Mods";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -383,14 +360,12 @@
         private NSTheme nsTheme1;
         private NSTabControl nsTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private NSTabControl nsTabControl2;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.TabPage tabPage3;
         private NSButton nsButton1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

@@ -30,7 +30,7 @@ namespace UK_111_Launcher
                 Console.WriteLine("Steam Directory: " + installpath);
                 Console.WriteLine("Launching Game!");
 
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZ_Epoch;@DayZOverwatch; -skipintro -noSplash -connect=151.80.33.151 -port=2302");
+                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=151.80.33.151 -port=2302");
             }
         }
 
@@ -46,7 +46,7 @@ namespace UK_111_Launcher
                 Console.WriteLine("Steam Directory: " + installpath);
                 Console.WriteLine("Launching Game!");
 
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZ_Epoch;@DayZOverwatch;@DayZOrigins; -skipintro -noSplash -connect=151.80.33.151 -port=4302");
+                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZOverwatch;@DayZOrigins;@DayZ_Epoch; -skipintro -noSplash -connect=151.80.33.151 -port=4302");
             }
         }
 
@@ -62,7 +62,7 @@ namespace UK_111_Launcher
                 Console.WriteLine("Steam Directory: " + installpath);
                 Console.WriteLine("Launching Game!");
 
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZ_Epoch;@DayZOverwatch; -skipintro -noSplash -connect=151.80.33.151 -port=3302");
+                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=151.80.33.151 -port=3302");
             }
         }
 
