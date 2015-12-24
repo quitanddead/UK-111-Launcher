@@ -73,6 +73,16 @@ namespace UK_111_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap admin_powers {
+            get {
+                object obj = ResourceManager.GetObject("admin_powers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap admin_powers_revised {
             get {
                 object obj = ResourceManager.GetObject("admin_powers_revised", resourceCulture);
@@ -273,6 +283,16 @@ namespace UK_111_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap moderator_powers {
+            get {
+                object obj = ResourceManager.GetObject("moderator_powers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap new_chernarus_background {
             get {
                 object obj = ResourceManager.GetObject("new_chernarus_background", resourceCulture);
@@ -366,6 +386,16 @@ namespace UK_111_Launcher.Properties {
         internal static System.Drawing.Bitmap sukkaed {
             get {
                 object obj = ResourceManager.GetObject("sukkaed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sukkaed_powers {
+            get {
+                object obj = ResourceManager.GetObject("sukkaed_powers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

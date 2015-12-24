@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,8 +28,6 @@ namespace UK_111_Launcher
             if (regKey != null)
             {
                 string installpath = regKey.GetValue("SteamPath").ToString();
-                Console.WriteLine("Steam Directory: " + installpath);
-                Console.WriteLine("Launching Game!");
 
                 System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=151.80.33.151 -port=2302");
             }
@@ -43,8 +42,6 @@ namespace UK_111_Launcher
             if (regKey != null)
             {
                 string installpath = regKey.GetValue("SteamPath").ToString();
-                Console.WriteLine("Steam Directory: " + installpath);
-                Console.WriteLine("Launching Game!");
 
                 System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZOverwatch;@DayZOrigins;@DayZ_Epoch; -skipintro -noSplash -connect=151.80.33.151 -port=4302");
             }
@@ -59,8 +56,6 @@ namespace UK_111_Launcher
             if (regKey != null)
             {
                 string installpath = regKey.GetValue("SteamPath").ToString();
-                Console.WriteLine("Steam Directory: " + installpath);
-                Console.WriteLine("Launching Game!");
 
                 System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=151.80.33.151 -port=3302");
             }
@@ -75,8 +70,6 @@ namespace UK_111_Launcher
             if (regKey != null)
             {
                 string installpath = regKey.GetValue("SteamPath").ToString();
-                Console.WriteLine("Steam Directory: " + installpath);
-                Console.WriteLine("Launching Game!");
 
                 System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 3\\arma3launcher.exe", "-noLauncher -useBE -mod=@Exile -skipintro -noSplash -connect=151.80.33.151 -port=5302");
             }
@@ -194,6 +187,66 @@ namespace UK_111_Launcher
         private void pictureBox24_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.uk111.uk/profile/15067002"); // Lilly
+        }
+        
+        // Set Arma 2 Directory
+        private void nsButton9_Click(object sender, EventArgs e)
+        {
+            A2Directory a2dir = new A2Directory();
+            a2dir.Show();
+        }
+
+        // Set Arma 3 Directory
+        private void nsButton10_Click(object sender, EventArgs e)
+        {
+            A3Directory a3dir = new A3Directory();
+            a3dir.Show();
+        }
+
+        static void CopyDirectory(DirectoryInfo source, DirectoryInfo destination)
+        {
+            if (!destination.Exists)
+            {
+                destination.Create();
+            }
+
+            // Copy all files.
+            FileInfo[] files = source.GetFiles();
+            foreach (FileInfo file in files)
+            {
+                file.CopyTo(Path.Combine(destination.FullName,
+                    file.Name));
+            }
+
+            // Process subdirectories.
+            DirectoryInfo[] dirs = source.GetDirectories();
+            foreach (DirectoryInfo dir in dirs)
+            {
+                // Get destination directory.
+                string destinationDir = Path.Combine(destination.FullName, dir.Name);
+
+                // Call CopyDirectory() recursively.
+                CopyDirectory(dir, new DirectoryInfo(destinationDir));
+            }
+        }
+
+        private void nsButton11_Click(object sender, EventArgs e)
+        {
+            RegistryKey regKey = Registry.CurrentUser;
+            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
+
+            if (regKey != null)
+            {
+                string installpath = regKey.GetValue("SteamPath").ToString();
+                Console.WriteLine("Steam Directory: " + installpath);
+
+                DirectoryInfo sourceDir = new DirectoryInfo(installpath + "\\steamapps\\common\\Arma 2\\Addons\\");
+                DirectoryInfo destinationDir = new DirectoryInfo(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\Addons\\");
+
+                CopyDirectory(sourceDir, destinationDir);
+
+                Console.WriteLine("File transfer completed!");
+            }
         }
     }
 }

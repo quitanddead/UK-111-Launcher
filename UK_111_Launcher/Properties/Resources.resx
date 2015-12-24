@@ -121,6 +121,9 @@
   <data name="admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="admin_powers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin powers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="admin_powers_revised" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\admin powers revised.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,6 +184,9 @@
   <data name="moderator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\moderator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="moderator_powers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moderator powers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="new_chernarus_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new chernarus background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -210,6 +216,9 @@
   </data>
   <data name="sukkaed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sukkaed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sukkaed_powers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sukkaed powers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tiger_lilly" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tiger lilly.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
