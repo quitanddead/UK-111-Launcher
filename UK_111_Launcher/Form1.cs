@@ -105,5 +105,95 @@ namespace UK_111_Launcher
         {
             Clipboard.SetText("94.23.0.19:2302");
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13245986"); // Sukkaed
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/11501618"); // Sen
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/6043327"); // QCube
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/12568683"); // Storm
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13303500"); // Daedalus
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/495463"); // Chimpa
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/3541710"); // Delta
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13400809"); // almighty
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13342505"); // inf
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/9562369"); // Joseph
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/12976258"); // BaltazaR
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/1491356"); // Doggers
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/11086313"); // Jason
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/3252733"); // Ked
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/169852"); // Semps
+        }
+
+        private void pictureBox22_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/14689004"); // pkefal
+        }
+
+        private void pictureBox23_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/10571598"); // Xuqi
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/15067002"); // Lilly
+        }
     }
 }

@@ -124,6 +124,21 @@
   <data name="admin_powers_revised" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\admin powers revised.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="almighty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\almighty.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avatar_1437322522" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatar.1437322522.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avatar_1447047964" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatar.1447047964.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avatar_1450067255" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatar.1450067255.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baltazar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baltazar.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="chimpa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chimpa.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,6 +148,12 @@
   <data name="daedalus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\daedalus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delta.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doggers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doggers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="epoch_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\epoch logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,6 +162,18 @@
   </data>
   <data name="exile_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exile logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inf.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jason" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jason.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="joseph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\joseph.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="launcher_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\launcher logo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +193,14 @@
   <data name="new_taviana_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new taviana background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pkefal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pkefal.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="powers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\powers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="qcube" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qcube.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="semps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\semps.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="server_owner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\server owner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,5 +210,11 @@
   </data>
   <data name="sukkaed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sukkaed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tiger_lilly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tiger lilly.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xuqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xuqi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
