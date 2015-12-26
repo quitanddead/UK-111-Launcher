@@ -248,5 +248,52 @@ namespace UK_111_Launcher
                 Console.WriteLine("File transfer completed!");
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            RegistryKey regKey = Registry.CurrentUser;
+            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
+
+            if (regKey != null)
+            {
+                string installpath = regKey.GetValue("SteamPath").ToString();
+                Console.WriteLine("Steam Directory: " + installpath);
+                // Exile
+                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 3\\@Exile"))
+                {
+                    nsOnOffBox1.Checked = true;
+                } else
+                {
+                    Console.WriteLine("Failed to find the directory for Exile!");
+                }
+                // Epoch
+                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayZ_Epoch"))
+                {
+                    nsOnOffBox2.Checked = true;
+                }
+                else
+                {
+                    Console.WriteLine("Failed to find the directory for Epoch!");
+                }
+                // Overwatch
+                if(Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOverwatch"))
+                {
+                    nsOnOffBox3.Checked = true;
+                }
+                else
+                {
+                    Console.WriteLine("Failed to find the directory for Overwatch!");
+                }
+                // Origins
+                if(Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOrigins"))
+                {
+                    nsOnOffBox4.Checked = true;
+                }
+                else
+                {
+                    Console.WriteLine("Failed to find the directory for Origins!");
+                }
+            }
+        }
     }
 }

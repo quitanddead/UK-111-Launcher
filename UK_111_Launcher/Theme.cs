@@ -1231,7 +1231,6 @@ class NSOnOffBox : Control
         Checked = !Checked;
         base.OnMouseDown(e);
     }
-
 }
 
 class NSControlButton : Control

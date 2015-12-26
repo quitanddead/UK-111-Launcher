@@ -145,9 +145,18 @@
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.nsOnOffBox4 = new NSOnOffBox();
+            this.nsOnOffBox3 = new NSOnOffBox();
+            this.nsOnOffBox2 = new NSOnOffBox();
+            this.nsOnOffBox1 = new NSOnOffBox();
+            this.pictureBox82 = new System.Windows.Forms.PictureBox();
+            this.nsSeperator1 = new NSSeperator();
+            this.pictureBox81 = new System.Windows.Forms.PictureBox();
+            this.pictureBox80 = new System.Windows.Forms.PictureBox();
+            this.pictureBox79 = new System.Windows.Forms.PictureBox();
+            this.nsButton11 = new NSButton();
             this.nsButton10 = new NSButton();
             this.nsButton9 = new NSButton();
-            this.nsButton11 = new NSButton();
             this.nsTheme1.SuspendLayout();
             this.nsTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -255,6 +264,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
             this.SuspendLayout();
             // 
             // nsTheme1
@@ -1500,6 +1513,15 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.tabPage3.Controls.Add(this.nsOnOffBox4);
+            this.tabPage3.Controls.Add(this.nsOnOffBox3);
+            this.tabPage3.Controls.Add(this.nsOnOffBox2);
+            this.tabPage3.Controls.Add(this.nsOnOffBox1);
+            this.tabPage3.Controls.Add(this.pictureBox82);
+            this.tabPage3.Controls.Add(this.nsSeperator1);
+            this.tabPage3.Controls.Add(this.pictureBox81);
+            this.tabPage3.Controls.Add(this.pictureBox80);
+            this.tabPage3.Controls.Add(this.pictureBox79);
             this.tabPage3.Controls.Add(this.nsButton11);
             this.tabPage3.Controls.Add(this.nsButton10);
             this.tabPage3.Controls.Add(this.nsButton9);
@@ -1508,6 +1530,107 @@
             this.tabPage3.Size = new System.Drawing.Size(1270, 664);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Miscellaneous";
+            // 
+            // nsOnOffBox4
+            // 
+            this.nsOnOffBox4.Checked = false;
+            this.nsOnOffBox4.Enabled = false;
+            this.nsOnOffBox4.Location = new System.Drawing.Point(819, 596);
+            this.nsOnOffBox4.MaximumSize = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox4.MinimumSize = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox4.Name = "nsOnOffBox4";
+            this.nsOnOffBox4.Size = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox4.TabIndex = 11;
+            this.nsOnOffBox4.Text = "nsOnOffBox4";
+            // 
+            // nsOnOffBox3
+            // 
+            this.nsOnOffBox3.Checked = false;
+            this.nsOnOffBox3.Enabled = false;
+            this.nsOnOffBox3.Location = new System.Drawing.Point(531, 595);
+            this.nsOnOffBox3.MaximumSize = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox3.MinimumSize = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox3.Name = "nsOnOffBox3";
+            this.nsOnOffBox3.Size = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox3.TabIndex = 10;
+            this.nsOnOffBox3.Text = "nsOnOffBox3";
+            // 
+            // nsOnOffBox2
+            // 
+            this.nsOnOffBox2.Checked = false;
+            this.nsOnOffBox2.Enabled = false;
+            this.nsOnOffBox2.Location = new System.Drawing.Point(285, 595);
+            this.nsOnOffBox2.MaximumSize = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox2.MinimumSize = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox2.Name = "nsOnOffBox2";
+            this.nsOnOffBox2.Size = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox2.TabIndex = 9;
+            this.nsOnOffBox2.Text = "nsOnOffBox2";
+            // 
+            // nsOnOffBox1
+            // 
+            this.nsOnOffBox1.Checked = false;
+            this.nsOnOffBox1.Enabled = false;
+            this.nsOnOffBox1.Location = new System.Drawing.Point(81, 596);
+            this.nsOnOffBox1.MaximumSize = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox1.MinimumSize = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox1.Name = "nsOnOffBox1";
+            this.nsOnOffBox1.Size = new System.Drawing.Size(56, 24);
+            this.nsOnOffBox1.TabIndex = 8;
+            this.nsOnOffBox1.Text = "nsOnOffBox1";
+            // 
+            // pictureBox82
+            // 
+            this.pictureBox82.Image = global::UK_111_Launcher.Properties.Resources.origins_logo_2;
+            this.pictureBox82.Location = new System.Drawing.Point(742, 472);
+            this.pictureBox82.Name = "pictureBox82";
+            this.pictureBox82.Size = new System.Drawing.Size(201, 85);
+            this.pictureBox82.TabIndex = 7;
+            this.pictureBox82.TabStop = false;
+            // 
+            // nsSeperator1
+            // 
+            this.nsSeperator1.Location = new System.Drawing.Point(0, 566);
+            this.nsSeperator1.Name = "nsSeperator1";
+            this.nsSeperator1.Size = new System.Drawing.Size(1265, 23);
+            this.nsSeperator1.TabIndex = 3;
+            this.nsSeperator1.Text = "nsSeperator1";
+            // 
+            // pictureBox81
+            // 
+            this.pictureBox81.Image = global::UK_111_Launcher.Properties.Resources.overwatch_logo;
+            this.pictureBox81.Location = new System.Drawing.Point(377, 496);
+            this.pictureBox81.Name = "pictureBox81";
+            this.pictureBox81.Size = new System.Drawing.Size(346, 61);
+            this.pictureBox81.TabIndex = 6;
+            this.pictureBox81.TabStop = false;
+            // 
+            // pictureBox80
+            // 
+            this.pictureBox80.Image = global::UK_111_Launcher.Properties.Resources.epoch_logo;
+            this.pictureBox80.Location = new System.Drawing.Point(258, 459);
+            this.pictureBox80.Name = "pictureBox80";
+            this.pictureBox80.Size = new System.Drawing.Size(113, 101);
+            this.pictureBox80.TabIndex = 5;
+            this.pictureBox80.TabStop = false;
+            // 
+            // pictureBox79
+            // 
+            this.pictureBox79.Image = global::UK_111_Launcher.Properties.Resources.exile_logo;
+            this.pictureBox79.Location = new System.Drawing.Point(3, 487);
+            this.pictureBox79.Name = "pictureBox79";
+            this.pictureBox79.Size = new System.Drawing.Size(236, 73);
+            this.pictureBox79.TabIndex = 4;
+            this.pictureBox79.TabStop = false;
+            // 
+            // nsButton11
+            // 
+            this.nsButton11.Location = new System.Drawing.Point(1084, 621);
+            this.nsButton11.Name = "nsButton11";
+            this.nsButton11.Size = new System.Drawing.Size(181, 38);
+            this.nsButton11.TabIndex = 2;
+            this.nsButton11.Text = "Fix Addon Error";
+            this.nsButton11.Click += new System.EventHandler(this.nsButton11_Click);
             // 
             // nsButton10
             // 
@@ -1527,15 +1650,6 @@
             this.nsButton9.Text = "Set Arma 2 Directory";
             this.nsButton9.Click += new System.EventHandler(this.nsButton9_Click);
             // 
-            // nsButton11
-            // 
-            this.nsButton11.Location = new System.Drawing.Point(1084, 621);
-            this.nsButton11.Name = "nsButton11";
-            this.nsButton11.Size = new System.Drawing.Size(181, 38);
-            this.nsButton11.TabIndex = 2;
-            this.nsButton11.Text = "Fix Addon Error";
-            this.nsButton11.Click += new System.EventHandler(this.nsButton11_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1546,6 +1660,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.nsTheme1.ResumeLayout(false);
             this.nsTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -1653,6 +1768,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1778,6 +1897,15 @@
         private NSButton nsButton10;
         private NSButton nsButton9;
         private NSButton nsButton11;
+        private System.Windows.Forms.PictureBox pictureBox81;
+        private System.Windows.Forms.PictureBox pictureBox80;
+        private System.Windows.Forms.PictureBox pictureBox79;
+        private NSSeperator nsSeperator1;
+        private System.Windows.Forms.PictureBox pictureBox82;
+        private NSOnOffBox nsOnOffBox4;
+        private NSOnOffBox nsOnOffBox3;
+        private NSOnOffBox nsOnOffBox2;
+        private NSOnOffBox nsOnOffBox1;
     }
 }
 

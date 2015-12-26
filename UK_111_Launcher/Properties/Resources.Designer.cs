@@ -333,6 +333,26 @@ namespace UK_111_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap origins_logo_2 {
+            get {
+                object obj = ResourceManager.GetObject("origins_logo_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap overwatch_logo {
+            get {
+                object obj = ResourceManager.GetObject("overwatch_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pkefal {
             get {
                 object obj = ResourceManager.GetObject("pkefal", resourceCulture);

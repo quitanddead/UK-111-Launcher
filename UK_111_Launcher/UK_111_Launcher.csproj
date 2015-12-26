@@ -192,6 +192,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="launcher logo.ico" />
+    <None Include="Resources\origins logo 2.png" />
+    <None Include="Resources\overwatch logo.png" />
     <None Include="Resources\moderator powers.png" />
     <None Include="Resources\admin powers.png" />
     <None Include="Resources\sukkaed powers.png" />
