@@ -262,6 +262,7 @@ namespace UK_111_Launcher
                 if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 3\\@Exile"))
                 {
                     nsOnOffBox1.Checked = true;
+                    nsButton12.Visible = false;
                 } else
                 {
                     Console.WriteLine("Failed to find the directory for Exile!");
@@ -270,6 +271,7 @@ namespace UK_111_Launcher
                 if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayZ_Epoch"))
                 {
                     nsOnOffBox2.Checked = true;
+                    nsButton13.Visible = false;
                 }
                 else
                 {
@@ -279,6 +281,7 @@ namespace UK_111_Launcher
                 if(Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOverwatch"))
                 {
                     nsOnOffBox3.Checked = true;
+                    nsButton14.Visible = false;
                 }
                 else
                 {
@@ -288,11 +291,68 @@ namespace UK_111_Launcher
                 if(Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOrigins"))
                 {
                     nsOnOffBox4.Checked = true;
+                    nsButton15.Visible = false;
                 }
                 else
                 {
                     Console.WriteLine("Failed to find the directory for Origins!");
                 }
+            }
+        }
+
+        // Fix Exile
+        private void nsButton12_Click(object sender, EventArgs e)
+        {
+            RegistryKey regKey = Registry.CurrentUser;
+            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
+
+            if (regKey != null)
+            {
+                string installpath = regKey.GetValue("SteamPath").ToString();
+
+                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 3\\");
+            }
+        }
+
+        // Fix Epoch
+        private void nsButton13_Click(object sender, EventArgs e)
+        {
+            RegistryKey regKey = Registry.CurrentUser;
+            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
+
+            if (regKey != null)
+            {
+                string installpath = regKey.GetValue("SteamPath").ToString();
+
+                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\");
+            }
+        }
+
+        // Fix Overwatch
+        private void nsButton14_Click(object sender, EventArgs e)
+        {
+            RegistryKey regKey = Registry.CurrentUser;
+            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
+
+            if (regKey != null)
+            {
+                string installpath = regKey.GetValue("SteamPath").ToString();
+
+                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\");
+            }
+        }
+
+        // Fix Origins
+        private void nsButton15_Click(object sender, EventArgs e)
+        {
+            RegistryKey regKey = Registry.CurrentUser;
+            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
+
+            if (regKey != null)
+            {
+                string installpath = regKey.GetValue("SteamPath").ToString();
+
+                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\");
             }
         }
     }

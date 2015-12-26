@@ -145,6 +145,10 @@
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.nsButton15 = new NSButton();
+            this.nsButton14 = new NSButton();
+            this.nsButton13 = new NSButton();
+            this.nsButton12 = new NSButton();
             this.nsOnOffBox4 = new NSOnOffBox();
             this.nsOnOffBox3 = new NSOnOffBox();
             this.nsOnOffBox2 = new NSOnOffBox();
@@ -1513,6 +1517,10 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.tabPage3.Controls.Add(this.nsButton15);
+            this.tabPage3.Controls.Add(this.nsButton14);
+            this.tabPage3.Controls.Add(this.nsButton13);
+            this.tabPage3.Controls.Add(this.nsButton12);
             this.tabPage3.Controls.Add(this.nsOnOffBox4);
             this.tabPage3.Controls.Add(this.nsOnOffBox3);
             this.tabPage3.Controls.Add(this.nsOnOffBox2);
@@ -1530,6 +1538,42 @@
             this.tabPage3.Size = new System.Drawing.Size(1270, 664);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Miscellaneous";
+            // 
+            // nsButton15
+            // 
+            this.nsButton15.Location = new System.Drawing.Point(810, 628);
+            this.nsButton15.Name = "nsButton15";
+            this.nsButton15.Size = new System.Drawing.Size(75, 23);
+            this.nsButton15.TabIndex = 15;
+            this.nsButton15.Text = "Fix!";
+            this.nsButton15.Click += new System.EventHandler(this.nsButton15_Click);
+            // 
+            // nsButton14
+            // 
+            this.nsButton14.Location = new System.Drawing.Point(522, 628);
+            this.nsButton14.Name = "nsButton14";
+            this.nsButton14.Size = new System.Drawing.Size(75, 23);
+            this.nsButton14.TabIndex = 14;
+            this.nsButton14.Text = "Fix!";
+            this.nsButton14.Click += new System.EventHandler(this.nsButton14_Click);
+            // 
+            // nsButton13
+            // 
+            this.nsButton13.Location = new System.Drawing.Point(276, 628);
+            this.nsButton13.Name = "nsButton13";
+            this.nsButton13.Size = new System.Drawing.Size(75, 23);
+            this.nsButton13.TabIndex = 13;
+            this.nsButton13.Text = "Fix!";
+            this.nsButton13.Click += new System.EventHandler(this.nsButton13_Click);
+            // 
+            // nsButton12
+            // 
+            this.nsButton12.Location = new System.Drawing.Point(71, 628);
+            this.nsButton12.Name = "nsButton12";
+            this.nsButton12.Size = new System.Drawing.Size(75, 23);
+            this.nsButton12.TabIndex = 12;
+            this.nsButton12.Text = "Fix!";
+            this.nsButton12.Click += new System.EventHandler(this.nsButton12_Click);
             // 
             // nsOnOffBox4
             // 
@@ -1906,6 +1950,10 @@
         private NSOnOffBox nsOnOffBox3;
         private NSOnOffBox nsOnOffBox2;
         private NSOnOffBox nsOnOffBox1;
+        private NSButton nsButton15;
+        private NSButton nsButton14;
+        private NSButton nsButton13;
+        private NSButton nsButton12;
     }
 }
 
