@@ -335,7 +335,7 @@ namespace UK_111_Launcher
                 }
             }
 
-            /* string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
+            string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
             string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
             string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
             string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
@@ -354,7 +354,7 @@ namespace UK_111_Launcher
             label1.Text = cherplayers.InnerText + "/50";
             label2.Text = taviplayers.InnerText + "/50";
             label3.Text = napfplayers.InnerText + "/50";
-            label4.Text = exileplayers.InnerText + "/70"; */
+            label4.Text = exileplayers.InnerText + "/70";
 
         }
 
