@@ -146,6 +146,9 @@
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.pictureBox86 = new System.Windows.Forms.PictureBox();
+            this.pictureBox85 = new System.Windows.Forms.PictureBox();
+            this.pictureBox84 = new System.Windows.Forms.PictureBox();
             this.pictureBox83 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.nsButton15 = new NSButton();
@@ -164,9 +167,9 @@
             this.nsButton11 = new NSButton();
             this.nsButton10 = new NSButton();
             this.nsButton9 = new NSButton();
-            this.pictureBox84 = new System.Windows.Forms.PictureBox();
-            this.pictureBox85 = new System.Windows.Forms.PictureBox();
-            this.pictureBox86 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.nsTheme1.SuspendLayout();
             this.nsTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -274,15 +277,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).BeginInit();
             this.SuspendLayout();
             // 
             // nsTheme1
@@ -388,11 +391,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(299, 36);
+            this.label1.Location = new System.Drawing.Point(230, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // nsButton2
             // 
@@ -425,6 +429,7 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.tabPage5.Controls.Add(this.label2);
             this.tabPage5.Controls.Add(this.nsButton6);
             this.tabPage5.Controls.Add(this.nsButton3);
             this.tabPage5.Controls.Add(this.pictureBox2);
@@ -466,6 +471,7 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.tabPage6.Controls.Add(this.label3);
             this.tabPage6.Controls.Add(this.nsButton7);
             this.tabPage6.Controls.Add(this.nsButton4);
             this.tabPage6.Controls.Add(this.pictureBox3);
@@ -506,6 +512,7 @@
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.tabPage7.Controls.Add(this.label4);
             this.tabPage7.Controls.Add(this.nsButton8);
             this.tabPage7.Controls.Add(this.nsButton5);
             this.tabPage7.Controls.Add(this.pictureBox6);
@@ -1505,7 +1512,7 @@
             this.pictureBox78.Image = global::UK_111_Launcher.Properties.Resources.moderator_powers;
             this.pictureBox78.Location = new System.Drawing.Point(3, 296);
             this.pictureBox78.Name = "pictureBox78";
-            this.pictureBox78.Size = new System.Drawing.Size(591, 349);
+            this.pictureBox78.Size = new System.Drawing.Size(436, 349);
             this.pictureBox78.TabIndex = 3;
             this.pictureBox78.TabStop = false;
             // 
@@ -1551,6 +1558,35 @@
             this.tabPage8.Size = new System.Drawing.Size(1139, 648);
             this.tabPage8.TabIndex = 18;
             this.tabPage8.Text = "AlexShadow";
+            // 
+            // pictureBox86
+            // 
+            this.pictureBox86.Image = global::UK_111_Launcher.Properties.Resources.moderator_powers;
+            this.pictureBox86.Location = new System.Drawing.Point(3, 296);
+            this.pictureBox86.Name = "pictureBox86";
+            this.pictureBox86.Size = new System.Drawing.Size(437, 349);
+            this.pictureBox86.TabIndex = 3;
+            this.pictureBox86.TabStop = false;
+            // 
+            // pictureBox85
+            // 
+            this.pictureBox85.BackgroundImage = global::UK_111_Launcher.Properties.Resources.powers;
+            this.pictureBox85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox85.Location = new System.Drawing.Point(3, 240);
+            this.pictureBox85.Name = "pictureBox85";
+            this.pictureBox85.Size = new System.Drawing.Size(175, 50);
+            this.pictureBox85.TabIndex = 2;
+            this.pictureBox85.TabStop = false;
+            // 
+            // pictureBox84
+            // 
+            this.pictureBox84.BackgroundImage = global::UK_111_Launcher.Properties.Resources.moderator;
+            this.pictureBox84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox84.Location = new System.Drawing.Point(3, 184);
+            this.pictureBox84.Name = "pictureBox84";
+            this.pictureBox84.Size = new System.Drawing.Size(175, 50);
+            this.pictureBox84.TabIndex = 1;
+            this.pictureBox84.TabStop = false;
             // 
             // pictureBox83
             // 
@@ -1742,34 +1778,38 @@
             this.nsButton9.Text = "Set Arma 2 Directory";
             this.nsButton9.Click += new System.EventHandler(this.nsButton9_Click);
             // 
-            // pictureBox84
+            // label2
             // 
-            this.pictureBox84.BackgroundImage = global::UK_111_Launcher.Properties.Resources.moderator;
-            this.pictureBox84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox84.Location = new System.Drawing.Point(3, 184);
-            this.pictureBox84.Name = "pictureBox84";
-            this.pictureBox84.Size = new System.Drawing.Size(175, 50);
-            this.pictureBox84.TabIndex = 1;
-            this.pictureBox84.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(230, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // pictureBox85
+            // label3
             // 
-            this.pictureBox85.BackgroundImage = global::UK_111_Launcher.Properties.Resources.powers;
-            this.pictureBox85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox85.Location = new System.Drawing.Point(3, 240);
-            this.pictureBox85.Name = "pictureBox85";
-            this.pictureBox85.Size = new System.Drawing.Size(175, 50);
-            this.pictureBox85.TabIndex = 2;
-            this.pictureBox85.TabStop = false;
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(230, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "label3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // pictureBox86
+            // label4
             // 
-            this.pictureBox86.Image = global::UK_111_Launcher.Properties.Resources.moderator_powers;
-            this.pictureBox86.Location = new System.Drawing.Point(3, 296);
-            this.pictureBox86.Name = "pictureBox86";
-            this.pictureBox86.Size = new System.Drawing.Size(437, 349);
-            this.pictureBox86.TabIndex = 3;
-            this.pictureBox86.TabStop = false;
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(230, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "label4";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Form1
             // 
@@ -1792,10 +1832,13 @@
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1892,15 +1935,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             this.tabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2039,12 +2082,15 @@
         private NSButton nsButton14;
         private NSButton nsButton13;
         private NSButton nsButton12;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.PictureBox pictureBox83;
         private System.Windows.Forms.PictureBox pictureBox86;
         private System.Windows.Forms.PictureBox pictureBox85;
         private System.Windows.Forms.PictureBox pictureBox84;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

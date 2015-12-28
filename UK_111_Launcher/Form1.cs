@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using HtmlAgilityPack;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -101,99 +102,118 @@ namespace UK_111_Launcher
             Clipboard.SetText("94.23.0.19:2302");
         }
 
+        // Sukkaed
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13245986"); // Sukkaed
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13245986");
         }
 
+        // Sen
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/11501618"); // Sen
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/11501618");
         }
 
+        // QCube
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/6043327"); // QCube
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/6043327");
         }
-
+        
+        // Storm
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/12568683"); // Storm
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/12568683");
         }
 
+        // Daedalus
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13303500"); // Daedalus
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13303500");
         }
 
+        // Chimpa
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/495463"); // Chimpa
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/495463");
         }
 
+        // Delta
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/3541710"); // Delta
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/3541710");
         }
 
+        // almighty
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13400809"); // almighty
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13400809");
         }
 
+        // inf
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13342505"); // inf
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13342505");
         }
 
+        // Joseph
         private void pictureBox16_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/9562369"); // Joseph
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/9562369");
         }
 
+        // Baltazar
         private void pictureBox17_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/12976258"); // BaltazaR
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/12976258");
         }
 
+        // Doggers
         private void pictureBox18_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/1491356"); // Doggers
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/1491356");
         }
 
+        // Jason
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/11086313"); // Jason
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/11086313");
         }
 
+        // Ked
         private void pictureBox20_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/3252733"); // Ked
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/3252733");
         }
 
+        // Semps
         private void pictureBox21_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/169852"); // Semps
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/169852");
         }
 
+        // pkefal
         private void pictureBox22_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/14689004"); // pkefal
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/14689004");
         }
 
+        // Xuqi
         private void pictureBox23_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/10571598"); // Xuqi
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/10571598");
         }
 
+        // Lilly
         private void pictureBox24_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/15067002"); // Lilly
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/15067002");
         }
 
+        // AlexShadow
         private void pictureBox83_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/10267276"); // AlexShadow
+            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/10267276");
         }
 
         // Set Arma 2 Directory
@@ -237,6 +257,7 @@ namespace UK_111_Launcher
             }
         }
 
+        // Fix Addon Error
         private void nsButton11_Click(object sender, EventArgs e)
         {
             RegistryKey regKey = Registry.CurrentUser;
@@ -305,7 +326,27 @@ namespace UK_111_Launcher
                     Console.WriteLine("Failed to find the directory for Origins!");
                 }
             }
-            // Planned for future: *[@id="HTML_num_players"]
+
+            string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
+            string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
+            string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
+            string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
+            var Webget = new HtmlWeb();
+
+            var cherdoc = Webget.Load(cherurl);
+            var tavidoc = Webget.Load(taviurl);
+            var napfdoc = Webget.Load(napfurl);
+            var exiledoc = Webget.Load(exileurl);
+
+            var cherplayers = cherdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+            var taviplayers = tavidoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+            var napfplayers = napfdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+            var exileplayers = exiledoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+
+            label1.Text = cherplayers.InnerText + "/50";
+            label2.Text = taviplayers.InnerText + "/50";
+            label3.Text = napfplayers.InnerText + "/50";
+            label4.Text = exileplayers.InnerText + "/70";
         }
 
         // Fix Exile
@@ -362,6 +403,50 @@ namespace UK_111_Launcher
 
                 System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\");
             }
+        }
+
+        // Chernarus Players
+        private void label1_Click(object sender, EventArgs e)
+        {
+            string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
+            var Webget = new HtmlWeb();
+            var cherdoc = Webget.Load(cherurl);
+            var cherplayers = cherdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+
+            label1.Text = cherplayers.InnerText + "/50";
+        }
+
+        // Tavi Players
+        private void label2_Click(object sender, EventArgs e)
+        {
+            string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
+            var Webget = new HtmlWeb();
+            var tavidoc = Webget.Load(taviurl);
+            var taviplayers = tavidoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+
+            label2.Text = taviplayers.InnerText + "/50";
+        }
+
+        // Napf Players
+        private void label3_Click(object sender, EventArgs e)
+        {
+            string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
+            var Webget = new HtmlWeb();
+            var napfdoc = Webget.Load(napfurl);
+            var napfplayers = napfdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+
+            label3.Text = napfplayers.InnerText + "/50";
+        }
+
+        // Exile Players
+        private void label4_Click(object sender, EventArgs e)
+        {
+            string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
+            var Webget = new HtmlWeb();
+            var exiledoc = Webget.Load(exileurl);
+            var exileplayers = exiledoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+
+            label4.Text = exileplayers.InnerText + "/70";
         }
     }
 }
