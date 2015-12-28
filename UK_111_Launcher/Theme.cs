@@ -10,9 +10,6 @@ using Microsoft.VisualBasic;
 using System.Runtime.InteropServices;
 using System.IO;
 using System.Drawing.Imaging;
-//C# NETSEAL THEME
-//ORIGINAL : AEONHACK!
-//CONVERTED FULLY BY: Trontor!
 public class ThemeModule
 {
     static internal Graphics G;
