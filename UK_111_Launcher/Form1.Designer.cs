@@ -287,6 +287,8 @@
             this.nsTheme1.Font = new System.Drawing.Font("Verdana", 8F);
             this.nsTheme1.Image = null;
             this.nsTheme1.Location = new System.Drawing.Point(0, 0);
+            this.nsTheme1.MaximumSize = new System.Drawing.Size(1399, 707);
+            this.nsTheme1.MinimumSize = new System.Drawing.Size(1399, 707);
             this.nsTheme1.Movable = true;
             this.nsTheme1.Name = "nsTheme1";
             this.nsTheme1.NoRounding = false;
@@ -1702,6 +1704,8 @@
             this.Controls.Add(this.nsTheme1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1399, 707);
+            this.MinimumSize = new System.Drawing.Size(1399, 707);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
