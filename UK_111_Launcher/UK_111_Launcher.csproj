@@ -192,6 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="launcher logo.ico" />
+    <None Include="Resources\alex shadow.jpeg" />
     <None Include="Resources\origins logo 2.png" />
     <None Include="Resources\overwatch logo.png" />
     <None Include="Resources\moderator powers.png" />

@@ -93,6 +93,16 @@ namespace UK_111_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap alex_shadow {
+            get {
+                object obj = ResourceManager.GetObject("alex_shadow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap almighty {
             get {
                 object obj = ResourceManager.GetObject("almighty", resourceCulture);
