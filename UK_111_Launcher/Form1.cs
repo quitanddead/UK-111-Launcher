@@ -10,6 +10,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,6 +21,9 @@ namespace UK_111_Launcher
         public Form1()
         {
             InitializeComponent();
+            backgroundWorker1 = new BackgroundWorker();
+
+            backgroundWorker1.DoWork += backgroundWorker1_DoWork;
         }
 
         // Chernarus
@@ -279,6 +283,10 @@ namespace UK_111_Launcher
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            backgroundWorker1.RunWorkerAsync();
+
+            CheckForIllegalCrossThreadCalls = false;
+
             RegistryKey regKey = Registry.CurrentUser;
             regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
 
@@ -327,7 +335,7 @@ namespace UK_111_Launcher
                 }
             }
 
-            string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
+            /* string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
             string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
             string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
             string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
@@ -346,7 +354,8 @@ namespace UK_111_Launcher
             label1.Text = cherplayers.InnerText + "/50";
             label2.Text = taviplayers.InnerText + "/50";
             label3.Text = napfplayers.InnerText + "/50";
-            label4.Text = exileplayers.InnerText + "/70";
+            label4.Text = exileplayers.InnerText + "/70"; */
+
         }
 
         // Fix Exile
@@ -405,48 +414,35 @@ namespace UK_111_Launcher
             }
         }
 
-        // Chernarus Players
-        private void label1_Click(object sender, EventArgs e)
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
-            var Webget = new HtmlWeb();
-            var cherdoc = Webget.Load(cherurl);
-            var cherplayers = cherdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+            for(;;)
+            {
+                string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
+                string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
+                string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
+                string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
+                var Webget = new HtmlWeb();
 
-            label1.Text = cherplayers.InnerText + "/50";
-        }
+                var cherdoc = Webget.Load(cherurl);
+                var tavidoc = Webget.Load(taviurl);
+                var napfdoc = Webget.Load(napfurl);
+                var exiledoc = Webget.Load(exileurl);
 
-        // Tavi Players
-        private void label2_Click(object sender, EventArgs e)
-        {
-            string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
-            var Webget = new HtmlWeb();
-            var tavidoc = Webget.Load(taviurl);
-            var taviplayers = tavidoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+                var cherplayers = cherdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+                var taviplayers = tavidoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+                var napfplayers = napfdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+                var exileplayers = exiledoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
 
-            label2.Text = taviplayers.InnerText + "/50";
-        }
+                label1.Text = cherplayers.InnerText + "/50";
+                label2.Text = taviplayers.InnerText + "/50";
+                label3.Text = napfplayers.InnerText + "/50";
+                label4.Text = exileplayers.InnerText + "/70";
 
-        // Napf Players
-        private void label3_Click(object sender, EventArgs e)
-        {
-            string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
-            var Webget = new HtmlWeb();
-            var napfdoc = Webget.Load(napfurl);
-            var napfplayers = napfdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+                Console.WriteLine("~~Working~~");
 
-            label3.Text = napfplayers.InnerText + "/50";
-        }
-
-        // Exile Players
-        private void label4_Click(object sender, EventArgs e)
-        {
-            string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
-            var Webget = new HtmlWeb();
-            var exiledoc = Webget.Load(exileurl);
-            var exileplayers = exiledoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-
-            label4.Text = exileplayers.InnerText + "/70";
+                Thread.Sleep(10000);
+            }
         }
     }
 }
