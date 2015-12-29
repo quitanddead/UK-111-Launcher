@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -64,8 +64,9 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlAgilityPack">
-      <HintPath>..\..\..\..\..\Downloads\HtmlAgilityPack.1.4.6\Net45\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\HtmlAgilityPack.1.4\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -228,6 +229,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

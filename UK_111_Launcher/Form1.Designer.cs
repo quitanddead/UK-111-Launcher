@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.nsTheme1 = new NSTheme();
             this.nsControlButton1 = new NSControlButton();
             this.nsTabControl1 = new NSTabControl();
@@ -170,8 +171,6 @@
             this.nsButton11 = new NSButton();
             this.nsButton10 = new NSButton();
             this.nsButton9 = new NSButton();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label5 = new System.Windows.Forms.Label();
             this.nsTheme1.SuspendLayout();
             this.nsTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -290,6 +289,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
             this.SuspendLayout();
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // nsTheme1
             // 
             this.nsTheme1.AccentOffset = 42;
@@ -377,7 +380,6 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage4.Controls.Add(this.label5);
             this.tabPage4.Controls.Add(this.label1);
             this.tabPage4.Controls.Add(this.nsButton2);
             this.tabPage4.Controls.Add(this.nsButton1);
@@ -1810,21 +1812,6 @@
             this.nsButton9.Text = "Set Arma 2 Directory";
             this.nsButton9.Click += new System.EventHandler(this.nsButton9_Click);
             // 
-            // backgroundWorker1
-            // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(285, 191);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2106,7 +2093,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label5;
     }
 }
 
