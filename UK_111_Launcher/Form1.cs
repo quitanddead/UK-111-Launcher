@@ -270,14 +270,11 @@ namespace UK_111_Launcher
             if (regKey != null)
             {
                 string installpath = regKey.GetValue("SteamPath").ToString();
-                Console.WriteLine("Steam Directory: " + installpath);
 
                 DirectoryInfo sourceDir = new DirectoryInfo(installpath + "\\steamapps\\common\\Arma 2\\Addons\\");
                 DirectoryInfo destinationDir = new DirectoryInfo(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\Addons\\");
 
                 CopyDirectory(sourceDir, destinationDir);
-
-                Console.WriteLine("File transfer completed!");
             }
         }
 
@@ -293,45 +290,33 @@ namespace UK_111_Launcher
             if (regKey != null)
             {
                 string installpath = regKey.GetValue("SteamPath").ToString();
-                Console.WriteLine("Steam Directory: " + installpath);
+
                 // Exile
                 if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 3\\@Exile"))
                 {
                     nsOnOffBox1.Checked = true;
                     nsButton12.Visible = false;
-                } else
-                {
-                    Console.WriteLine("Failed to find the directory for Exile!");
                 }
+
                 // Epoch
                 if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayZ_Epoch"))
                 {
                     nsOnOffBox2.Checked = true;
                     nsButton13.Visible = false;
                 }
-                else
-                {
-                    Console.WriteLine("Failed to find the directory for Epoch!");
-                }
+
                 // Overwatch
                 if(Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOverwatch"))
                 {
                     nsOnOffBox3.Checked = true;
                     nsButton14.Visible = false;
                 }
-                else
-                {
-                    Console.WriteLine("Failed to find the directory for Overwatch!");
-                }
+
                 // Origins
                 if(Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOrigins"))
                 {
                     nsOnOffBox4.Checked = true;
                     nsButton15.Visible = false;
-                }
-                else
-                {
-                    Console.WriteLine("Failed to find the directory for Origins!");
                 }
             }
 
@@ -339,8 +324,8 @@ namespace UK_111_Launcher
             string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
             string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
             string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
-            var Webget = new HtmlWeb();
 
+            var Webget = new HtmlWeb();
             var cherdoc = Webget.Load(cherurl);
             var tavidoc = Webget.Load(taviurl);
             var napfdoc = Webget.Load(napfurl);
@@ -438,8 +423,6 @@ namespace UK_111_Launcher
                 label2.Text = taviplayers.InnerText + "/50";
                 label3.Text = napfplayers.InnerText + "/50";
                 label4.Text = exileplayers.InnerText + "/70";
-
-                Console.WriteLine("~~Working~~");
 
                 Thread.Sleep(10000);
             }
