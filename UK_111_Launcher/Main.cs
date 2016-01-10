@@ -1,24 +1,23 @@
 ﻿using HtmlAgilityPack;
 using Microsoft.Win32;
 using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UK_111_Launcher
 {
-    public partial class Form1 : Form
-    {
-        public Form1()
+    public partial class Main : Form
+    {   
+        private String a2path = "\\steamapps\\common\\Arma 2 Operation Arrowhead\\";
+        private String a3path = "\\steamapps\\common\\Arma 3\\";
+
+        private ArrayList ips = new ArrayList();
+        private ArrayList ports = new ArrayList();
+
+        public Main()
         {
             InitializeComponent();
             backgroundWorker1 = new BackgroundWorker();
@@ -26,9 +25,21 @@ namespace UK_111_Launcher
             backgroundWorker1.DoWork += backgroundWorker1_DoWork;
         }
 
-        // Chernarus
-        private void nsButton1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
+            backgroundWorker1.RunWorkerAsync();
+
+            CheckForIllegalCrossThreadCalls = false;
+
+            ips.Add("151.80.33.151");
+            ips.Add("151.80.33.151");
+            ips.Add("151.80.33.151");
+
+            ports.Add("2302");
+            ports.Add("3302");
+            ports.Add("4302");
+            ports.Add("5302");
+
             RegistryKey regKey = Registry.CurrentUser;
             regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
 
@@ -36,8 +47,62 @@ namespace UK_111_Launcher
             {
                 string installpath = regKey.GetValue("SteamPath").ToString();
 
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=151.80.33.151 -port=2302");
+                // Exile
+                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 3\\@Exile"))
+                {
+                    nsOnOffBox1.Checked = true;
+                    nsButton12.Visible = false;
+                }
+
+                // Epoch
+                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayZ_Epoch"))
+                {
+                    nsOnOffBox2.Checked = true;
+                    nsButton13.Visible = false;
+                }
+
+                // Overwatch
+                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOverwatch"))
+                {
+                    nsOnOffBox3.Checked = true;
+                    nsButton14.Visible = false;
+                }
+
+                // Origins
+                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOrigins"))
+                {
+                    nsOnOffBox4.Checked = true;
+                    nsButton15.Visible = false;
+                }
             }
+
+            string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
+            string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
+            string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
+            string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
+
+            var Webget = new HtmlWeb();
+            var cherdoc = Webget.Load(cherurl);
+            var tavidoc = Webget.Load(taviurl);
+            var napfdoc = Webget.Load(napfurl);
+            var exiledoc = Webget.Load(exileurl);
+
+            var cherplayers = cherdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+            var taviplayers = tavidoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+            var napfplayers = napfdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+            var exileplayers = exiledoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
+
+            label1.Text = cherplayers.InnerText + "/50";
+            label2.Text = taviplayers.InnerText + "/50";
+            label3.Text = napfplayers.InnerText + "/50";
+            label4.Text = exileplayers.InnerText + "/70";
+
+        }
+
+        // Chernarus
+        private void nsButton1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(regKey.steamPath() + a2path + "arma2oa.exe", "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=" + ips[0] + " -port=" + ports[0]);
         }
 
         // Taviana
@@ -78,7 +143,7 @@ namespace UK_111_Launcher
             {
                 string installpath = regKey.GetValue("SteamPath").ToString();
 
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 3\\arma3launcher.exe", "-noLauncher -useBE -mod=@Exile -skipintro -noSplash -connect=151.80.33.151 -port=5302");
+                System.Diagnostics.Process.Start(installpath + a3path, "-noLauncher -useBE -mod=@Exile -skipintro -noSplash -connect=151.80.33.151 -port=5302");
             }
         }
 
@@ -276,71 +341,6 @@ namespace UK_111_Launcher
 
                 CopyDirectory(sourceDir, destinationDir);
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            backgroundWorker1.RunWorkerAsync();
-
-            CheckForIllegalCrossThreadCalls = false;
-
-            RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
-
-            if (regKey != null)
-            {
-                string installpath = regKey.GetValue("SteamPath").ToString();
-
-                // Exile
-                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 3\\@Exile"))
-                {
-                    nsOnOffBox1.Checked = true;
-                    nsButton12.Visible = false;
-                }
-
-                // Epoch
-                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayZ_Epoch"))
-                {
-                    nsOnOffBox2.Checked = true;
-                    nsButton13.Visible = false;
-                }
-
-                // Overwatch
-                if(Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOverwatch"))
-                {
-                    nsOnOffBox3.Checked = true;
-                    nsButton14.Visible = false;
-                }
-
-                // Origins
-                if(Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOrigins"))
-                {
-                    nsOnOffBox4.Checked = true;
-                    nsButton15.Visible = false;
-                }
-            }
-
-            string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
-            string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
-            string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
-            string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
-
-            var Webget = new HtmlWeb();
-            var cherdoc = Webget.Load(cherurl);
-            var tavidoc = Webget.Load(taviurl);
-            var napfdoc = Webget.Load(napfurl);
-            var exiledoc = Webget.Load(exileurl);
-
-            var cherplayers = cherdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-            var taviplayers = tavidoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-            var napfplayers = napfdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-            var exileplayers = exiledoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-
-            label1.Text = cherplayers.InnerText + "/50";
-            label2.Text = taviplayers.InnerText + "/50";
-            label3.Text = napfplayers.InnerText + "/50";
-            label4.Text = exileplayers.InnerText + "/70";
-
         }
 
         // Fix Exile

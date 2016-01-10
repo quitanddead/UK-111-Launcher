@@ -1,6 +1,6 @@
 ﻿namespace UK_111_Launcher
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.nsTheme1 = new NSTheme();
             this.nsControlButton1 = new NSControlButton();
