@@ -1,288 +1,120 @@
-﻿using HtmlAgilityPack;
+﻿using Custom_Functions;
 using Microsoft.Win32;
 using System;
 using System.Collections;
-using System.ComponentModel;
 using System.IO;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace UK_111_Launcher
 {
     public partial class Main : Form
-    {   
+    {
+        private static regKey rK = new regKey();
+
         private String a2path = "\\steamapps\\common\\Arma 2 Operation Arrowhead\\";
         private String a3path = "\\steamapps\\common\\Arma 3\\";
+        private String a2ip = "151.80.33.151";
+        private String a3ip = "94.23.0.19";
+        private String steamPath = rK.appPath(@"Software\Valve\Steam", "SteamPath");
+        private String a2params = "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=";
+        private String a3params = "-noLauncher -useBE -mod=@Exile -skipintro -noSplash -connect=";
 
-        private ArrayList ips = new ArrayList();
         private ArrayList ports = new ArrayList();
 
         public Main()
         {
             InitializeComponent();
-            backgroundWorker1 = new BackgroundWorker();
-
-            backgroundWorker1.DoWork += backgroundWorker1_DoWork;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Main_Load(object sender, EventArgs e)
         {
             backgroundWorker1.RunWorkerAsync();
 
             CheckForIllegalCrossThreadCalls = false;
-
-            ips.Add("151.80.33.151");
-            ips.Add("151.80.33.151");
-            ips.Add("151.80.33.151");
 
             ports.Add("2302");
             ports.Add("3302");
             ports.Add("4302");
             ports.Add("5302");
 
-            RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
-
-            if (regKey != null)
+            if (steamPath != null)
             {
-                string installpath = regKey.GetValue("SteamPath").ToString();
-
                 // Exile
-                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 3\\@Exile"))
+                if (Directory.Exists(steamPath + a3path + "@Exile"))
                 {
                     nsOnOffBox1.Checked = true;
                     nsButton12.Visible = false;
                 }
 
                 // Epoch
-                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayZ_Epoch"))
+                if (Directory.Exists(steamPath + a2path + "@DayZ_Epoch"))
                 {
                     nsOnOffBox2.Checked = true;
                     nsButton13.Visible = false;
                 }
 
                 // Overwatch
-                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOverwatch"))
+                if (Directory.Exists(steamPath + a2path + "@DayzOverwatch"))
                 {
                     nsOnOffBox3.Checked = true;
                     nsButton14.Visible = false;
                 }
 
                 // Origins
-                if (Directory.Exists(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\@DayzOrigins"))
+                if (Directory.Exists(steamPath + a2path + "@DayzOrigins"))
                 {
                     nsOnOffBox4.Checked = true;
                     nsButton15.Visible = false;
                 }
             }
-
-            string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
-            string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
-            string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
-            string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
-
-            var Webget = new HtmlWeb();
-            var cherdoc = Webget.Load(cherurl);
-            var tavidoc = Webget.Load(taviurl);
-            var napfdoc = Webget.Load(napfurl);
-            var exiledoc = Webget.Load(exileurl);
-
-            var cherplayers = cherdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-            var taviplayers = tavidoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-            var napfplayers = napfdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-            var exileplayers = exiledoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-
-            label1.Text = cherplayers.InnerText + "/50";
-            label2.Text = taviplayers.InnerText + "/50";
-            label3.Text = napfplayers.InnerText + "/50";
-            label4.Text = exileplayers.InnerText + "/70";
-
         }
 
         // Chernarus
         private void nsButton1_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(regKey.steamPath() + a2path + "arma2oa.exe", "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=" + ips[0] + " -port=" + ports[0]);
+            System.Diagnostics.Process.Start(steamPath + a2path + "arma2oa.exe", a2params + a2ip + " -port=" + ports[0]);
         }
 
         // Taviana
         private void nsButton3_Click(object sender, EventArgs e)
         {
-            RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
-
-            if (regKey != null)
-            {
-                string installpath = regKey.GetValue("SteamPath").ToString();
-
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZOverwatch;@DayZOrigins;@DayZ_Epoch; -skipintro -noSplash -connect=151.80.33.151 -port=4302");
-            }
+            System.Diagnostics.Process.Start(steamPath + a2path + "arma2oa.exe", a2params + a2ip + "-port=" + ports[2]);
         }
 
         // Napf
         private void nsButton4_Click(object sender, EventArgs e)
         {
-            RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
-
-            if (regKey != null)
-            {
-                string installpath = regKey.GetValue("SteamPath").ToString();
-
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\arma2oa.exe", "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=151.80.33.151 -port=3302");
-            }
+            System.Diagnostics.Process.Start(steamPath + a2path + "arma2oa.exe", a2params + a2ip + "-port=" + ports[1]);
         }
 
         // Exile
         private void nsButton5_Click(object sender, EventArgs e)
         {
-            RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
-
-            if (regKey != null)
-            {
-                string installpath = regKey.GetValue("SteamPath").ToString();
-
-                System.Diagnostics.Process.Start(installpath + a3path, "-noLauncher -useBE -mod=@Exile -skipintro -noSplash -connect=151.80.33.151 -port=5302");
-            }
+            System.Diagnostics.Process.Start(steamPath + a3path + "arma3launcher.exe", a3params + a3ip + "-port=" + ports[0]);
         }
 
         // Chernarus IP
         private void nsButton2_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("151.80.33.151:2302");
+            Clipboard.SetText(a2ip + ":" + ports[0]);
         }
 
         // Taviana IP
         private void nsButton6_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("151.80.33.151:4302");
+            Clipboard.SetText(a2ip + ":" + ports[2]);
         }
 
         // Napf IP
         private void nsButton7_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("151.80.33.151:3302");
+            Clipboard.SetText(a2ip + ":" + ports[1]);
         }
 
         // Exile IP
         private void nsButton8_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("94.23.0.19:2302");
-        }
-
-        // Sukkaed
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13245986");
-        }
-
-        // Sen
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/11501618");
-        }
-
-        // QCube
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/6043327");
-        }
-        
-        // Storm
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/12568683");
-        }
-
-        // Daedalus
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13303500");
-        }
-
-        // Chimpa
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/495463");
-        }
-
-        // Delta
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/3541710");
-        }
-
-        // almighty
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13400809");
-        }
-
-        // inf
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13342505");
-        }
-
-        // Joseph
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/9562369");
-        }
-
-        // Baltazar
-        private void pictureBox17_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/12976258");
-        }
-
-        // Doggers
-        private void pictureBox18_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/1491356");
-        }
-
-        // Jason
-        private void pictureBox19_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/11086313");
-        }
-
-        // Ked
-        private void pictureBox20_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/3252733");
-        }
-
-        // Semps
-        private void pictureBox21_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/169852");
-        }
-
-        // pkefal
-        private void pictureBox22_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/14689004");
-        }
-
-        // Xuqi
-        private void pictureBox23_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/10571598");
-        }
-
-        // Lilly
-        private void pictureBox24_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/15067002");
-        }
-
-        // AlexShadow
-        private void pictureBox83_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/10267276");
+            Clipboard.SetText(a3ip + ":" + ports[0]);
         }
 
         // Set Arma 2 Directory
@@ -334,10 +166,10 @@ namespace UK_111_Launcher
 
             if (regKey != null)
             {
-                string installpath = regKey.GetValue("SteamPath").ToString();
+                string steamPath = regKey.GetValue("SteamPath").ToString();
 
-                DirectoryInfo sourceDir = new DirectoryInfo(installpath + "\\steamapps\\common\\Arma 2\\Addons\\");
-                DirectoryInfo destinationDir = new DirectoryInfo(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\Addons\\");
+                DirectoryInfo sourceDir = new DirectoryInfo(steamPath + a2path + "Addons\\");
+                DirectoryInfo destinationDir = new DirectoryInfo(steamPath + a2path + "Addons\\");
 
                 CopyDirectory(sourceDir, destinationDir);
             }
@@ -346,86 +178,25 @@ namespace UK_111_Launcher
         // Fix Exile
         private void nsButton12_Click(object sender, EventArgs e)
         {
-            RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
-
-            if (regKey != null)
-            {
-                string installpath = regKey.GetValue("SteamPath").ToString();
-
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 3\\");
-            }
+            System.Diagnostics.Process.Start(steamPath + a3path);
         }
 
         // Fix Epoch
         private void nsButton13_Click(object sender, EventArgs e)
         {
-            RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
-
-            if (regKey != null)
-            {
-                string installpath = regKey.GetValue("SteamPath").ToString();
-
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\");
-            }
+            System.Diagnostics.Process.Start(steamPath + a2path);
         }
 
         // Fix Overwatch
         private void nsButton14_Click(object sender, EventArgs e)
         {
-            RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
-
-            if (regKey != null)
-            {
-                string installpath = regKey.GetValue("SteamPath").ToString();
-
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\");
-            }
+            System.Diagnostics.Process.Start(steamPath + a2path);
         }
 
         // Fix Origins
         private void nsButton15_Click(object sender, EventArgs e)
         {
-            RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
-
-            if (regKey != null)
-            {
-                string installpath = regKey.GetValue("SteamPath").ToString();
-
-                System.Diagnostics.Process.Start(installpath + "\\steamapps\\common\\Arma 2 Operation Arrowhead\\");
-            }
-        }
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-            for(;;)
-            {
-                string cherurl = "http://www.gametracker.com/server_info/151.80.33.151:2302/";
-                string taviurl = "http://www.gametracker.com/server_info/151.80.33.151:4302/";
-                string napfurl = "http://www.gametracker.com/server_info/151.80.33.151:3302/";
-                string exileurl = "http://www.gametracker.com/server_info/94.23.0.19:2302/";
-                var Webget = new HtmlWeb();
-
-                var cherdoc = Webget.Load(cherurl);
-                var tavidoc = Webget.Load(taviurl);
-                var napfdoc = Webget.Load(napfurl);
-                var exiledoc = Webget.Load(exileurl);
-
-                var cherplayers = cherdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-                var taviplayers = tavidoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-                var napfplayers = napfdoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-                var exileplayers = exiledoc.DocumentNode.SelectSingleNode("//span[@id='HTML_num_players']");
-
-                label1.Text = cherplayers.InnerText + "/50";
-                label2.Text = taviplayers.InnerText + "/50";
-                label3.Text = napfplayers.InnerText + "/50";
-                label4.Text = exileplayers.InnerText + "/70";
-
-                Thread.Sleep(10000);
-            }
+            System.Diagnostics.Process.Start(steamPath + a2path);
         }
     }
 }

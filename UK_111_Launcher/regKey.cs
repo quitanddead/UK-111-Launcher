@@ -1,15 +1,15 @@
 ﻿using Microsoft.Win32;
 
-    class regKey
+    class regKeys
     {
-        public static string steamPath()
+        public static string appPath(string subKey, string pathVal)
         {
             RegistryKey regKey = Registry.CurrentUser;
-            regKey = regKey.OpenSubKey(@"Software\Valve\Steam");
+            regKey = regKey.OpenSubKey(subKey);
             string installpath = null;
             if(regKey != null)
             {
-                installpath = regKey.GetValue("SteamPath").ToString();
+                installpath = regKey.GetValue(pathVal).ToString();
             }
 
             return installpath;

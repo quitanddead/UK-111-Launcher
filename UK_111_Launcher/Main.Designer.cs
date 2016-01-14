@@ -36,22 +36,18 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.nsTabControl2 = new NSTabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.nsButton2 = new NSButton();
             this.nsButton1 = new NSButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
             this.nsButton6 = new NSButton();
             this.nsButton3 = new NSButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
             this.nsButton7 = new NSButton();
             this.nsButton4 = new NSButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
             this.nsButton8 = new NSButton();
             this.nsButton5 = new NSButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -289,10 +285,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
             this.SuspendLayout();
             // 
-            // backgroundWorker1
-            // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            // 
             // nsTheme1
             // 
             this.nsTheme1.AccentOffset = 42;
@@ -380,7 +372,6 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage4.Controls.Add(this.label1);
             this.tabPage4.Controls.Add(this.nsButton2);
             this.tabPage4.Controls.Add(this.nsButton1);
             this.tabPage4.Controls.Add(this.pictureBox1);
@@ -391,16 +382,6 @@
             this.tabPage4.Size = new System.Drawing.Size(1135, 644);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "Chernarus";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(230, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
             // 
             // nsButton2
             // 
@@ -433,7 +414,6 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage5.Controls.Add(this.label2);
             this.tabPage5.Controls.Add(this.nsButton6);
             this.tabPage5.Controls.Add(this.nsButton3);
             this.tabPage5.Controls.Add(this.pictureBox2);
@@ -443,16 +423,6 @@
             this.tabPage5.Size = new System.Drawing.Size(1135, 644);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Taviana";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(230, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
             // 
             // nsButton6
             // 
@@ -485,7 +455,6 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage6.Controls.Add(this.label3);
             this.tabPage6.Controls.Add(this.nsButton7);
             this.tabPage6.Controls.Add(this.nsButton4);
             this.tabPage6.Controls.Add(this.pictureBox3);
@@ -494,16 +463,6 @@
             this.tabPage6.Size = new System.Drawing.Size(1135, 644);
             this.tabPage6.TabIndex = 2;
             this.tabPage6.Text = "Napf";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(230, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
             // 
             // nsButton7
             // 
@@ -536,7 +495,6 @@
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage7.Controls.Add(this.label4);
             this.tabPage7.Controls.Add(this.nsButton8);
             this.tabPage7.Controls.Add(this.nsButton5);
             this.tabPage7.Controls.Add(this.pictureBox6);
@@ -547,16 +505,6 @@
             this.tabPage7.Size = new System.Drawing.Size(1135, 644);
             this.tabPage7.TabIndex = 3;
             this.tabPage7.Text = "Exile";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(230, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
             // 
             // nsButton8
             // 
@@ -694,7 +642,6 @@
             this.pictureBox7.Size = new System.Drawing.Size(175, 175);
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // tabPage10
             // 
@@ -746,7 +693,6 @@
             this.pictureBox8.Size = new System.Drawing.Size(175, 175);
             this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // tabPage11
             // 
@@ -798,7 +744,6 @@
             this.pictureBox9.Size = new System.Drawing.Size(175, 175);
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // tabPage12
             // 
@@ -850,7 +795,6 @@
             this.pictureBox10.Size = new System.Drawing.Size(175, 175);
             this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // tabPage13
             // 
@@ -902,7 +846,6 @@
             this.pictureBox11.Size = new System.Drawing.Size(175, 175);
             this.pictureBox11.TabIndex = 0;
             this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // tabPage14
             // 
@@ -954,7 +897,6 @@
             this.pictureBox12.Size = new System.Drawing.Size(175, 175);
             this.pictureBox12.TabIndex = 0;
             this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // tabPage15
             // 
@@ -1006,7 +948,6 @@
             this.pictureBox14.Size = new System.Drawing.Size(175, 175);
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
-            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // tabPage16
             // 
@@ -1058,7 +999,6 @@
             this.pictureBox13.Size = new System.Drawing.Size(175, 175);
             this.pictureBox13.TabIndex = 0;
             this.pictureBox13.TabStop = false;
-            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // tabPage17
             // 
@@ -1110,7 +1050,6 @@
             this.pictureBox15.Size = new System.Drawing.Size(175, 175);
             this.pictureBox15.TabIndex = 0;
             this.pictureBox15.TabStop = false;
-            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // tabPage18
             // 
@@ -1162,7 +1101,6 @@
             this.pictureBox16.Size = new System.Drawing.Size(175, 175);
             this.pictureBox16.TabIndex = 0;
             this.pictureBox16.TabStop = false;
-            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // tabPage19
             // 
@@ -1214,7 +1152,6 @@
             this.pictureBox17.Size = new System.Drawing.Size(175, 175);
             this.pictureBox17.TabIndex = 0;
             this.pictureBox17.TabStop = false;
-            this.pictureBox17.Click += new System.EventHandler(this.pictureBox17_Click);
             // 
             // tabPage20
             // 
@@ -1266,7 +1203,6 @@
             this.pictureBox18.Size = new System.Drawing.Size(175, 175);
             this.pictureBox18.TabIndex = 0;
             this.pictureBox18.TabStop = false;
-            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
             // 
             // tabPage21
             // 
@@ -1318,7 +1254,6 @@
             this.pictureBox19.Size = new System.Drawing.Size(175, 175);
             this.pictureBox19.TabIndex = 0;
             this.pictureBox19.TabStop = false;
-            this.pictureBox19.Click += new System.EventHandler(this.pictureBox19_Click);
             // 
             // tabPage22
             // 
@@ -1370,7 +1305,6 @@
             this.pictureBox20.Size = new System.Drawing.Size(175, 175);
             this.pictureBox20.TabIndex = 0;
             this.pictureBox20.TabStop = false;
-            this.pictureBox20.Click += new System.EventHandler(this.pictureBox20_Click);
             // 
             // tabPage23
             // 
@@ -1422,7 +1356,6 @@
             this.pictureBox21.Size = new System.Drawing.Size(175, 175);
             this.pictureBox21.TabIndex = 0;
             this.pictureBox21.TabStop = false;
-            this.pictureBox21.Click += new System.EventHandler(this.pictureBox21_Click);
             // 
             // tabPage24
             // 
@@ -1474,7 +1407,6 @@
             this.pictureBox22.Size = new System.Drawing.Size(175, 175);
             this.pictureBox22.TabIndex = 0;
             this.pictureBox22.TabStop = false;
-            this.pictureBox22.Click += new System.EventHandler(this.pictureBox22_Click);
             // 
             // tabPage25
             // 
@@ -1526,7 +1458,6 @@
             this.pictureBox23.Size = new System.Drawing.Size(175, 175);
             this.pictureBox23.TabIndex = 0;
             this.pictureBox23.TabStop = false;
-            this.pictureBox23.Click += new System.EventHandler(this.pictureBox23_Click);
             // 
             // tabPage26
             // 
@@ -1578,7 +1509,6 @@
             this.pictureBox24.Size = new System.Drawing.Size(175, 175);
             this.pictureBox24.TabIndex = 0;
             this.pictureBox24.TabStop = false;
-            this.pictureBox24.Click += new System.EventHandler(this.pictureBox24_Click);
             // 
             // tabPage8
             // 
@@ -1630,7 +1560,6 @@
             this.pictureBox83.Size = new System.Drawing.Size(175, 175);
             this.pictureBox83.TabIndex = 0;
             this.pictureBox83.TabStop = false;
-            this.pictureBox83.Click += new System.EventHandler(this.pictureBox83_Click);
             // 
             // tabPage3
             // 
@@ -1812,7 +1741,7 @@
             this.nsButton9.Text = "Set Arma 2 Directory";
             this.nsButton9.Click += new System.EventHandler(this.nsButton9_Click);
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1822,24 +1751,20 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1399, 707);
             this.MinimumSize = new System.Drawing.Size(1399, 707);
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Main_Load);
             this.nsTheme1.ResumeLayout(false);
             this.nsTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.nsTabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -2088,10 +2013,6 @@
         private System.Windows.Forms.PictureBox pictureBox86;
         private System.Windows.Forms.PictureBox pictureBox85;
         private System.Windows.Forms.PictureBox pictureBox84;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
