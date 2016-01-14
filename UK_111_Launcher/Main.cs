@@ -78,7 +78,7 @@ namespace UK_111_Launcher
         // Taviana
         private void nsButton3_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(steamPath + a2path + "arma2oa.exe", a2params + a2ip + "-port=" + ports[2]);
+            System.Diagnostics.Process.Start(steamPath + a2path + "arma2oa.exe", a2params + a2ip + "-port=" + ports[4]);
         }
 
         // Napf
