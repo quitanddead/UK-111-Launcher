@@ -13,8 +13,8 @@ namespace UK_111_Launcher
 
         private String a2path = "\\steamapps\\common\\Arma 2 Operation Arrowhead\\";
         private String a3path = "\\steamapps\\common\\Arma 3\\";
-        private String a2ip = "151.80.33.151";
-        private String a3ip = "94.23.0.19";
+        public static String a2ip = "151.80.33.151";
+        public static String a3ip = "94.23.0.19";
         private String steamPath = rK.appPath(@"Software\Valve\Steam", "SteamPath");
         private String a2params = "-mod=@DayZOverwatch;@DayZ_Epoch; -skipintro -noSplash -connect=";
         private String a3params = "-noLauncher -useBE -mod=@Exile -skipintro -noSplash -connect=";
