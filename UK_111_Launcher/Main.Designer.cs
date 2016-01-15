@@ -661,7 +661,7 @@
             this.pictureBox62.Image = global::UK_111_Launcher.Properties.Resources.admin_powers_revised;
             this.pictureBox62.Location = new System.Drawing.Point(3, 296);
             this.pictureBox62.Name = "pictureBox62";
-            this.pictureBox62.Size = new System.Drawing.Size(522, 349);
+            this.pictureBox62.Size = new System.Drawing.Size(656, 349);
             this.pictureBox62.TabIndex = 3;
             this.pictureBox62.TabStop = false;
             // 
@@ -1069,7 +1069,7 @@
             this.pictureBox73.Image = global::UK_111_Launcher.Properties.Resources.admin_powers;
             this.pictureBox73.Location = new System.Drawing.Point(3, 296);
             this.pictureBox73.Name = "pictureBox73";
-            this.pictureBox73.Size = new System.Drawing.Size(548, 349);
+            this.pictureBox73.Size = new System.Drawing.Size(636, 349);
             this.pictureBox73.TabIndex = 3;
             this.pictureBox73.TabStop = false;
             // 

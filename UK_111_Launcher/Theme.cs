@@ -12,7 +12,6 @@ using System.IO;
 using System.Drawing.Imaging;
 public class ThemeModule
 {
-    static internal Graphics G;
 
     public ThemeModule()
     {
@@ -1697,7 +1696,6 @@ class NSRandomPool : Control
         get { return _Value.ToString(); }
     }
 
-    private string _FullValue;
     public string FullValue
     {
         get { return BitConverter.ToString(Table).Replace("-", ""); }
