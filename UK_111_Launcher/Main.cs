@@ -28,10 +28,6 @@ namespace UK_111_Launcher
 
         private void Main_Load(object sender, EventArgs e)
         {
-            backgroundWorker1.RunWorkerAsync();
-
-            CheckForIllegalCrossThreadCalls = false;
-
             ports.Add("2302");
             ports.Add("3302");
             ports.Add("4302");
