@@ -33,28 +33,28 @@
             this.nsTheme1 = new NSTheme();
             this.nsControlButton1 = new NSControlButton();
             this.nsTabControl1 = new NSTabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.nsTabControl2 = new NSTabControl();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.nsButton2 = new NSButton();
-            this.nsButton1 = new NSButton();
+            this.serverTab = new System.Windows.Forms.TabPage();
+            this.serversTab = new NSTabControl();
+            this.chernoTab = new System.Windows.Forms.TabPage();
+            this.chernoIP = new NSButton();
+            this.joinCherno = new NSButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.nsButton6 = new NSButton();
-            this.nsButton3 = new NSButton();
+            this.taviTab = new System.Windows.Forms.TabPage();
+            this.taviIP = new NSButton();
+            this.joinTavi = new NSButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.nsButton7 = new NSButton();
-            this.nsButton4 = new NSButton();
+            this.napfTab = new System.Windows.Forms.TabPage();
+            this.napfIP = new NSButton();
+            this.joinNapf = new NSButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.nsButton8 = new NSButton();
-            this.nsButton5 = new NSButton();
+            this.exileTab = new System.Windows.Forms.TabPage();
+            this.exileIP = new NSButton();
+            this.joinExile = new NSButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.nsTabControl3 = new NSTabControl();
+            this.stafflistTab = new System.Windows.Forms.TabPage();
+            this.staffTab = new NSTabControl();
             this.sukkTab = new System.Windows.Forms.TabPage();
             this.pictureBox61 = new System.Windows.Forms.PictureBox();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
@@ -100,6 +100,11 @@
             this.pictureBox51 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.infAvatar = new System.Windows.Forms.PictureBox();
+            this.jasonTab = new System.Windows.Forms.TabPage();
+            this.pictureBox73 = new System.Windows.Forms.PictureBox();
+            this.pictureBox55 = new System.Windows.Forms.PictureBox();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.jasonAvatar = new System.Windows.Forms.PictureBox();
             this.josephTab = new System.Windows.Forms.TabPage();
             this.pictureBox70 = new System.Windows.Forms.PictureBox();
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
@@ -115,11 +120,6 @@
             this.pictureBox54 = new System.Windows.Forms.PictureBox();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.doggersAvatar = new System.Windows.Forms.PictureBox();
-            this.jasonTab = new System.Windows.Forms.TabPage();
-            this.pictureBox73 = new System.Windows.Forms.PictureBox();
-            this.pictureBox55 = new System.Windows.Forms.PictureBox();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.jasonAvatar = new System.Windows.Forms.PictureBox();
             this.kedTab = new System.Windows.Forms.TabPage();
             this.pictureBox74 = new System.Windows.Forms.PictureBox();
             this.pictureBox56 = new System.Windows.Forms.PictureBox();
@@ -150,7 +150,7 @@
             this.pictureBox85 = new System.Windows.Forms.PictureBox();
             this.pictureBox84 = new System.Windows.Forms.PictureBox();
             this.alexAvatar = new System.Windows.Forms.PictureBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.miscTab = new System.Windows.Forms.TabPage();
             this.nsButton15 = new NSButton();
             this.nsButton14 = new NSButton();
             this.nsButton13 = new NSButton();
@@ -169,20 +169,20 @@
             this.nsButton9 = new NSButton();
             this.nsTheme1.SuspendLayout();
             this.nsTabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.nsTabControl2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.serverTab.SuspendLayout();
+            this.serversTab.SuspendLayout();
+            this.chernoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage5.SuspendLayout();
+            this.taviTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabPage6.SuspendLayout();
+            this.napfTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.tabPage7.SuspendLayout();
+            this.exileTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.nsTabControl3.SuspendLayout();
+            this.stafflistTab.SuspendLayout();
+            this.staffTab.SuspendLayout();
             this.sukkTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
@@ -228,6 +228,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infAvatar)).BeginInit();
+            this.jasonTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jasonAvatar)).BeginInit();
             this.josephTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
@@ -243,11 +248,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doggersAvatar)).BeginInit();
-            this.jasonTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jasonAvatar)).BeginInit();
             this.kedTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
@@ -278,7 +278,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alexAvatar)).BeginInit();
-            this.tabPage3.SuspendLayout();
+            this.miscTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
@@ -328,9 +328,9 @@
             // nsTabControl1
             // 
             this.nsTabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.nsTabControl1.Controls.Add(this.tabPage1);
-            this.nsTabControl1.Controls.Add(this.tabPage2);
-            this.nsTabControl1.Controls.Add(this.tabPage3);
+            this.nsTabControl1.Controls.Add(this.serverTab);
+            this.nsTabControl1.Controls.Add(this.stafflistTab);
+            this.nsTabControl1.Controls.Add(this.miscTab);
             this.nsTabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.nsTabControl1.ItemSize = new System.Drawing.Size(28, 115);
             this.nsTabControl1.Location = new System.Drawing.Point(3, 32);
@@ -341,65 +341,65 @@
             this.nsTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.nsTabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // serverTab
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage1.Controls.Add(this.nsTabControl2);
-            this.tabPage1.Location = new System.Drawing.Point(119, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1270, 664);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Servers";
+            this.serverTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.serverTab.Controls.Add(this.serversTab);
+            this.serverTab.Location = new System.Drawing.Point(119, 4);
+            this.serverTab.Name = "serverTab";
+            this.serverTab.Padding = new System.Windows.Forms.Padding(3);
+            this.serverTab.Size = new System.Drawing.Size(1270, 664);
+            this.serverTab.TabIndex = 0;
+            this.serverTab.Text = "Servers";
             // 
-            // nsTabControl2
+            // serversTab
             // 
-            this.nsTabControl2.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.nsTabControl2.Controls.Add(this.tabPage4);
-            this.nsTabControl2.Controls.Add(this.tabPage5);
-            this.nsTabControl2.Controls.Add(this.tabPage6);
-            this.nsTabControl2.Controls.Add(this.tabPage7);
-            this.nsTabControl2.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.nsTabControl2.ItemSize = new System.Drawing.Size(28, 115);
-            this.nsTabControl2.Location = new System.Drawing.Point(6, 6);
-            this.nsTabControl2.Multiline = true;
-            this.nsTabControl2.Name = "nsTabControl2";
-            this.nsTabControl2.SelectedIndex = 0;
-            this.nsTabControl2.Size = new System.Drawing.Size(1258, 652);
-            this.nsTabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.nsTabControl2.TabIndex = 0;
+            this.serversTab.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.serversTab.Controls.Add(this.chernoTab);
+            this.serversTab.Controls.Add(this.taviTab);
+            this.serversTab.Controls.Add(this.napfTab);
+            this.serversTab.Controls.Add(this.exileTab);
+            this.serversTab.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.serversTab.ItemSize = new System.Drawing.Size(28, 115);
+            this.serversTab.Location = new System.Drawing.Point(6, 6);
+            this.serversTab.Multiline = true;
+            this.serversTab.Name = "serversTab";
+            this.serversTab.SelectedIndex = 0;
+            this.serversTab.Size = new System.Drawing.Size(1258, 652);
+            this.serversTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.serversTab.TabIndex = 0;
             // 
-            // tabPage4
+            // chernoTab
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage4.Controls.Add(this.nsButton2);
-            this.tabPage4.Controls.Add(this.nsButton1);
-            this.tabPage4.Controls.Add(this.pictureBox1);
-            this.tabPage4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tabPage4.Location = new System.Drawing.Point(119, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1135, 644);
-            this.tabPage4.TabIndex = 0;
-            this.tabPage4.Text = "Chernarus";
+            this.chernoTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.chernoTab.Controls.Add(this.chernoIP);
+            this.chernoTab.Controls.Add(this.joinCherno);
+            this.chernoTab.Controls.Add(this.pictureBox1);
+            this.chernoTab.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.chernoTab.Location = new System.Drawing.Point(119, 4);
+            this.chernoTab.Name = "chernoTab";
+            this.chernoTab.Padding = new System.Windows.Forms.Padding(3);
+            this.chernoTab.Size = new System.Drawing.Size(1135, 644);
+            this.chernoTab.TabIndex = 0;
+            this.chernoTab.Text = "Chernarus";
             // 
-            // nsButton2
+            // chernoIP
             // 
-            this.nsButton2.Location = new System.Drawing.Point(911, 18);
-            this.nsButton2.Name = "nsButton2";
-            this.nsButton2.Size = new System.Drawing.Size(218, 32);
-            this.nsButton2.TabIndex = 2;
-            this.nsButton2.Text = "Copy IP to Clipboard";
-            this.nsButton2.Click += new System.EventHandler(this.nsButton2_Click);
+            this.chernoIP.Location = new System.Drawing.Point(911, 18);
+            this.chernoIP.Name = "chernoIP";
+            this.chernoIP.Size = new System.Drawing.Size(218, 32);
+            this.chernoIP.TabIndex = 2;
+            this.chernoIP.Text = "Copy IP to Clipboard";
+            this.chernoIP.Click += new System.EventHandler(this.chernoIP_Click);
             // 
-            // nsButton1
+            // joinCherno
             // 
-            this.nsButton1.Location = new System.Drawing.Point(6, 18);
-            this.nsButton1.Name = "nsButton1";
-            this.nsButton1.Size = new System.Drawing.Size(218, 32);
-            this.nsButton1.TabIndex = 1;
-            this.nsButton1.Text = "Join Server";
-            this.nsButton1.Click += new System.EventHandler(this.nsButton1_Click);
+            this.joinCherno.Location = new System.Drawing.Point(6, 18);
+            this.joinCherno.Name = "joinCherno";
+            this.joinCherno.Size = new System.Drawing.Size(218, 32);
+            this.joinCherno.TabIndex = 1;
+            this.joinCherno.Text = "Join Server";
+            this.joinCherno.Click += new System.EventHandler(this.joinCherno_Click);
             // 
             // pictureBox1
             // 
@@ -411,36 +411,36 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // tabPage5
+            // taviTab
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage5.Controls.Add(this.nsButton6);
-            this.tabPage5.Controls.Add(this.nsButton3);
-            this.tabPage5.Controls.Add(this.pictureBox2);
-            this.tabPage5.Location = new System.Drawing.Point(119, 4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1135, 644);
-            this.tabPage5.TabIndex = 1;
-            this.tabPage5.Text = "Taviana";
+            this.taviTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.taviTab.Controls.Add(this.taviIP);
+            this.taviTab.Controls.Add(this.joinTavi);
+            this.taviTab.Controls.Add(this.pictureBox2);
+            this.taviTab.Location = new System.Drawing.Point(119, 4);
+            this.taviTab.Name = "taviTab";
+            this.taviTab.Padding = new System.Windows.Forms.Padding(3);
+            this.taviTab.Size = new System.Drawing.Size(1135, 644);
+            this.taviTab.TabIndex = 1;
+            this.taviTab.Text = "Taviana";
             // 
-            // nsButton6
+            // taviIP
             // 
-            this.nsButton6.Location = new System.Drawing.Point(911, 18);
-            this.nsButton6.Name = "nsButton6";
-            this.nsButton6.Size = new System.Drawing.Size(218, 32);
-            this.nsButton6.TabIndex = 2;
-            this.nsButton6.Text = "Copy IP to Clipboard";
-            this.nsButton6.Click += new System.EventHandler(this.nsButton6_Click);
+            this.taviIP.Location = new System.Drawing.Point(911, 18);
+            this.taviIP.Name = "taviIP";
+            this.taviIP.Size = new System.Drawing.Size(218, 32);
+            this.taviIP.TabIndex = 2;
+            this.taviIP.Text = "Copy IP to Clipboard";
+            this.taviIP.Click += new System.EventHandler(this.taviIP_Click);
             // 
-            // nsButton3
+            // joinTavi
             // 
-            this.nsButton3.Location = new System.Drawing.Point(6, 18);
-            this.nsButton3.Name = "nsButton3";
-            this.nsButton3.Size = new System.Drawing.Size(218, 32);
-            this.nsButton3.TabIndex = 1;
-            this.nsButton3.Text = "Join Server";
-            this.nsButton3.Click += new System.EventHandler(this.nsButton3_Click);
+            this.joinTavi.Location = new System.Drawing.Point(6, 18);
+            this.joinTavi.Name = "joinTavi";
+            this.joinTavi.Size = new System.Drawing.Size(218, 32);
+            this.joinTavi.TabIndex = 1;
+            this.joinTavi.Text = "Join Server";
+            this.joinTavi.Click += new System.EventHandler(this.joinTavi_Click);
             // 
             // pictureBox2
             // 
@@ -452,35 +452,35 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // tabPage6
+            // napfTab
             // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage6.Controls.Add(this.nsButton7);
-            this.tabPage6.Controls.Add(this.nsButton4);
-            this.tabPage6.Controls.Add(this.pictureBox3);
-            this.tabPage6.Location = new System.Drawing.Point(119, 4);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1135, 644);
-            this.tabPage6.TabIndex = 2;
-            this.tabPage6.Text = "Napf";
+            this.napfTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.napfTab.Controls.Add(this.napfIP);
+            this.napfTab.Controls.Add(this.joinNapf);
+            this.napfTab.Controls.Add(this.pictureBox3);
+            this.napfTab.Location = new System.Drawing.Point(119, 4);
+            this.napfTab.Name = "napfTab";
+            this.napfTab.Size = new System.Drawing.Size(1135, 644);
+            this.napfTab.TabIndex = 2;
+            this.napfTab.Text = "Napf";
             // 
-            // nsButton7
+            // napfIP
             // 
-            this.nsButton7.Location = new System.Drawing.Point(911, 18);
-            this.nsButton7.Name = "nsButton7";
-            this.nsButton7.Size = new System.Drawing.Size(218, 32);
-            this.nsButton7.TabIndex = 2;
-            this.nsButton7.Text = "Copy IP to Clipboard";
-            this.nsButton7.Click += new System.EventHandler(this.nsButton7_Click);
+            this.napfIP.Location = new System.Drawing.Point(911, 18);
+            this.napfIP.Name = "napfIP";
+            this.napfIP.Size = new System.Drawing.Size(218, 32);
+            this.napfIP.TabIndex = 2;
+            this.napfIP.Text = "Copy IP to Clipboard";
+            this.napfIP.Click += new System.EventHandler(this.napfIP_Click);
             // 
-            // nsButton4
+            // joinNapf
             // 
-            this.nsButton4.Location = new System.Drawing.Point(6, 18);
-            this.nsButton4.Name = "nsButton4";
-            this.nsButton4.Size = new System.Drawing.Size(218, 32);
-            this.nsButton4.TabIndex = 1;
-            this.nsButton4.Text = "Join Server";
-            this.nsButton4.Click += new System.EventHandler(this.nsButton4_Click);
+            this.joinNapf.Location = new System.Drawing.Point(6, 18);
+            this.joinNapf.Name = "joinNapf";
+            this.joinNapf.Size = new System.Drawing.Size(218, 32);
+            this.joinNapf.TabIndex = 1;
+            this.joinNapf.Text = "Join Server";
+            this.joinNapf.Click += new System.EventHandler(this.joinNapf_Click);
             // 
             // pictureBox3
             // 
@@ -492,37 +492,37 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // tabPage7
+            // exileTab
             // 
-            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage7.Controls.Add(this.nsButton8);
-            this.tabPage7.Controls.Add(this.nsButton5);
-            this.tabPage7.Controls.Add(this.pictureBox6);
-            this.tabPage7.Controls.Add(this.pictureBox5);
-            this.tabPage7.Controls.Add(this.pictureBox4);
-            this.tabPage7.Location = new System.Drawing.Point(119, 4);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1135, 644);
-            this.tabPage7.TabIndex = 3;
-            this.tabPage7.Text = "Exile";
+            this.exileTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.exileTab.Controls.Add(this.exileIP);
+            this.exileTab.Controls.Add(this.joinExile);
+            this.exileTab.Controls.Add(this.pictureBox6);
+            this.exileTab.Controls.Add(this.pictureBox5);
+            this.exileTab.Controls.Add(this.pictureBox4);
+            this.exileTab.Location = new System.Drawing.Point(119, 4);
+            this.exileTab.Name = "exileTab";
+            this.exileTab.Size = new System.Drawing.Size(1135, 644);
+            this.exileTab.TabIndex = 3;
+            this.exileTab.Text = "Exile";
             // 
-            // nsButton8
+            // exileIP
             // 
-            this.nsButton8.Location = new System.Drawing.Point(911, 18);
-            this.nsButton8.Name = "nsButton8";
-            this.nsButton8.Size = new System.Drawing.Size(218, 32);
-            this.nsButton8.TabIndex = 4;
-            this.nsButton8.Text = "Copy IP to Clipboard";
-            this.nsButton8.Click += new System.EventHandler(this.nsButton8_Click);
+            this.exileIP.Location = new System.Drawing.Point(911, 18);
+            this.exileIP.Name = "exileIP";
+            this.exileIP.Size = new System.Drawing.Size(218, 32);
+            this.exileIP.TabIndex = 4;
+            this.exileIP.Text = "Copy IP to Clipboard";
+            this.exileIP.Click += new System.EventHandler(this.exileIP_Click);
             // 
-            // nsButton5
+            // joinExile
             // 
-            this.nsButton5.Location = new System.Drawing.Point(6, 18);
-            this.nsButton5.Name = "nsButton5";
-            this.nsButton5.Size = new System.Drawing.Size(218, 32);
-            this.nsButton5.TabIndex = 3;
-            this.nsButton5.Text = "Join Server";
-            this.nsButton5.Click += new System.EventHandler(this.nsButton5_Click);
+            this.joinExile.Location = new System.Drawing.Point(6, 18);
+            this.joinExile.Name = "joinExile";
+            this.joinExile.Size = new System.Drawing.Size(218, 32);
+            this.joinExile.TabIndex = 3;
+            this.joinExile.Text = "Join Server";
+            this.joinExile.Click += new System.EventHandler(this.joinExile_Click);
             // 
             // pictureBox6
             // 
@@ -550,47 +550,47 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // tabPage2
+            // stafflistTab
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage2.Controls.Add(this.nsTabControl3);
-            this.tabPage2.Location = new System.Drawing.Point(119, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1270, 664);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Staff";
+            this.stafflistTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.stafflistTab.Controls.Add(this.staffTab);
+            this.stafflistTab.Location = new System.Drawing.Point(119, 4);
+            this.stafflistTab.Name = "stafflistTab";
+            this.stafflistTab.Size = new System.Drawing.Size(1270, 664);
+            this.stafflistTab.TabIndex = 1;
+            this.stafflistTab.Text = "Staff";
             // 
-            // nsTabControl3
+            // staffTab
             // 
-            this.nsTabControl3.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.nsTabControl3.Controls.Add(this.sukkTab);
-            this.nsTabControl3.Controls.Add(this.senTab);
-            this.nsTabControl3.Controls.Add(this.cubeTab);
-            this.nsTabControl3.Controls.Add(this.stormTab);
-            this.nsTabControl3.Controls.Add(this.daedalusTab);
-            this.nsTabControl3.Controls.Add(this.chimpTab);
-            this.nsTabControl3.Controls.Add(this.deltaTab);
-            this.nsTabControl3.Controls.Add(this.almightyTab);
-            this.nsTabControl3.Controls.Add(this.infTab);
-            this.nsTabControl3.Controls.Add(this.jasonTab);
-            this.nsTabControl3.Controls.Add(this.josephTab);
-            this.nsTabControl3.Controls.Add(this.baltTab);
-            this.nsTabControl3.Controls.Add(this.doggersTab);
-            this.nsTabControl3.Controls.Add(this.kedTab);
-            this.nsTabControl3.Controls.Add(this.sempsTab);
-            this.nsTabControl3.Controls.Add(this.pkTab);
-            this.nsTabControl3.Controls.Add(this.xuqiTab);
-            this.nsTabControl3.Controls.Add(this.lillyTab);
-            this.nsTabControl3.Controls.Add(this.alexTab);
-            this.nsTabControl3.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.nsTabControl3.ItemSize = new System.Drawing.Size(28, 115);
-            this.nsTabControl3.Location = new System.Drawing.Point(3, 3);
-            this.nsTabControl3.Multiline = true;
-            this.nsTabControl3.Name = "nsTabControl3";
-            this.nsTabControl3.SelectedIndex = 0;
-            this.nsTabControl3.Size = new System.Drawing.Size(1262, 656);
-            this.nsTabControl3.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.nsTabControl3.TabIndex = 0;
+            this.staffTab.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.staffTab.Controls.Add(this.sukkTab);
+            this.staffTab.Controls.Add(this.senTab);
+            this.staffTab.Controls.Add(this.cubeTab);
+            this.staffTab.Controls.Add(this.stormTab);
+            this.staffTab.Controls.Add(this.daedalusTab);
+            this.staffTab.Controls.Add(this.chimpTab);
+            this.staffTab.Controls.Add(this.deltaTab);
+            this.staffTab.Controls.Add(this.almightyTab);
+            this.staffTab.Controls.Add(this.infTab);
+            this.staffTab.Controls.Add(this.jasonTab);
+            this.staffTab.Controls.Add(this.josephTab);
+            this.staffTab.Controls.Add(this.baltTab);
+            this.staffTab.Controls.Add(this.doggersTab);
+            this.staffTab.Controls.Add(this.kedTab);
+            this.staffTab.Controls.Add(this.sempsTab);
+            this.staffTab.Controls.Add(this.pkTab);
+            this.staffTab.Controls.Add(this.xuqiTab);
+            this.staffTab.Controls.Add(this.lillyTab);
+            this.staffTab.Controls.Add(this.alexTab);
+            this.staffTab.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.staffTab.ItemSize = new System.Drawing.Size(28, 115);
+            this.staffTab.Location = new System.Drawing.Point(3, 3);
+            this.staffTab.Multiline = true;
+            this.staffTab.Name = "staffTab";
+            this.staffTab.SelectedIndex = 0;
+            this.staffTab.Size = new System.Drawing.Size(1262, 656);
+            this.staffTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.staffTab.TabIndex = 0;
             // 
             // sukkTab
             // 
@@ -642,7 +642,6 @@
             this.sukkaedAvatar.Size = new System.Drawing.Size(175, 175);
             this.sukkaedAvatar.TabIndex = 0;
             this.sukkaedAvatar.TabStop = false;
-            this.sukkaedAvatar.Click += new System.EventHandler(picButtons.sukkaedAvatar_Click);
             // 
             // senTab
             // 
@@ -694,7 +693,6 @@
             this.senAvatar.Size = new System.Drawing.Size(175, 175);
             this.senAvatar.TabIndex = 0;
             this.senAvatar.TabStop = false;
-            this.senAvatar.Click += new System.EventHandler(picButtons.senAvatar_Click);
             // 
             // cubeTab
             // 
@@ -746,7 +744,6 @@
             this.cubeAvatar.Size = new System.Drawing.Size(175, 175);
             this.cubeAvatar.TabIndex = 0;
             this.cubeAvatar.TabStop = false;
-            this.cubeAvatar.Click += new System.EventHandler(picButtons.cubeAvatar_Click);
             // 
             // stormTab
             // 
@@ -798,7 +795,6 @@
             this.stormAvatar.Size = new System.Drawing.Size(175, 175);
             this.stormAvatar.TabIndex = 0;
             this.stormAvatar.TabStop = false;
-            this.stormAvatar.Click += new System.EventHandler(picButtons.stormAvatar_Click);
             // 
             // daedalusTab
             // 
@@ -850,7 +846,6 @@
             this.daedalusAvatar.Size = new System.Drawing.Size(175, 175);
             this.daedalusAvatar.TabIndex = 0;
             this.daedalusAvatar.TabStop = false;
-            this.daedalusAvatar.Click += new System.EventHandler(picButtons.daedalusAvatar_Click);
             // 
             // chimpTab
             // 
@@ -902,7 +897,6 @@
             this.chimpaAvatar.Size = new System.Drawing.Size(175, 175);
             this.chimpaAvatar.TabIndex = 0;
             this.chimpaAvatar.TabStop = false;
-            this.chimpaAvatar.Click += new System.EventHandler(picButtons.chimpaAvatar_Click);
             // 
             // deltaTab
             // 
@@ -954,7 +948,6 @@
             this.deltaAvatar.Size = new System.Drawing.Size(175, 175);
             this.deltaAvatar.TabIndex = 0;
             this.deltaAvatar.TabStop = false;
-            this.deltaAvatar.Click += new System.EventHandler(picButtons.deltaAvatar_Click);
             // 
             // almightyTab
             // 
@@ -1006,7 +999,6 @@
             this.almightyAvatar.Size = new System.Drawing.Size(175, 175);
             this.almightyAvatar.TabIndex = 0;
             this.almightyAvatar.TabStop = false;
-            this.almightyAvatar.Click += new System.EventHandler(picButtons.almightyAvatar_Click);
             // 
             // infTab
             // 
@@ -1058,163 +1050,6 @@
             this.infAvatar.Size = new System.Drawing.Size(175, 175);
             this.infAvatar.TabIndex = 0;
             this.infAvatar.TabStop = false;
-            this.infAvatar.Click += new System.EventHandler(picButtons.infAvatar_Click);
-            // 
-            // josephTab
-            // 
-            this.josephTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.josephTab.Controls.Add(this.pictureBox70);
-            this.josephTab.Controls.Add(this.pictureBox52);
-            this.josephTab.Controls.Add(this.pictureBox34);
-            this.josephTab.Controls.Add(this.josephAvatar);
-            this.josephTab.Location = new System.Drawing.Point(119, 4);
-            this.josephTab.Name = "josephTab";
-            this.josephTab.Size = new System.Drawing.Size(1139, 648);
-            this.josephTab.TabIndex = 9;
-            this.josephTab.Text = "Joseph";
-            // 
-            // pictureBox70
-            // 
-            this.pictureBox70.Image = global::UK_111_Launcher.Properties.Resources.moderator_powers;
-            this.pictureBox70.Location = new System.Drawing.Point(3, 296);
-            this.pictureBox70.Name = "pictureBox70";
-            this.pictureBox70.Size = new System.Drawing.Size(779, 352);
-            this.pictureBox70.TabIndex = 3;
-            this.pictureBox70.TabStop = false;
-            // 
-            // pictureBox52
-            // 
-            this.pictureBox52.BackgroundImage = global::UK_111_Launcher.Properties.Resources.powers;
-            this.pictureBox52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox52.Location = new System.Drawing.Point(3, 240);
-            this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(175, 50);
-            this.pictureBox52.TabIndex = 2;
-            this.pictureBox52.TabStop = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.BackgroundImage = global::UK_111_Launcher.Properties.Resources.moderator;
-            this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox34.Location = new System.Drawing.Point(3, 184);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(175, 50);
-            this.pictureBox34.TabIndex = 1;
-            this.pictureBox34.TabStop = false;
-            // 
-            // josephAvatar
-            // 
-            this.josephAvatar.Image = global::UK_111_Launcher.Properties.Resources.joseph;
-            this.josephAvatar.Location = new System.Drawing.Point(3, 3);
-            this.josephAvatar.Name = "josephAvatar";
-            this.josephAvatar.Size = new System.Drawing.Size(175, 175);
-            this.josephAvatar.TabIndex = 0;
-            this.josephAvatar.TabStop = false;
-            this.josephAvatar.Click += new System.EventHandler(picButtons.josephAvatar_Click);
-            // 
-            // baltTab
-            // 
-            this.baltTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.baltTab.Controls.Add(this.pictureBox71);
-            this.baltTab.Controls.Add(this.pictureBox53);
-            this.baltTab.Controls.Add(this.pictureBox35);
-            this.baltTab.Controls.Add(this.baltAvatar);
-            this.baltTab.Location = new System.Drawing.Point(119, 4);
-            this.baltTab.Name = "baltTab";
-            this.baltTab.Size = new System.Drawing.Size(1139, 648);
-            this.baltTab.TabIndex = 10;
-            this.baltTab.Text = "BaltazaR";
-            // 
-            // pictureBox71
-            // 
-            this.pictureBox71.Image = global::UK_111_Launcher.Properties.Resources.moderator_powers;
-            this.pictureBox71.Location = new System.Drawing.Point(3, 296);
-            this.pictureBox71.Name = "pictureBox71";
-            this.pictureBox71.Size = new System.Drawing.Size(585, 349);
-            this.pictureBox71.TabIndex = 3;
-            this.pictureBox71.TabStop = false;
-            // 
-            // pictureBox53
-            // 
-            this.pictureBox53.BackgroundImage = global::UK_111_Launcher.Properties.Resources.powers;
-            this.pictureBox53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox53.Location = new System.Drawing.Point(3, 240);
-            this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(175, 50);
-            this.pictureBox53.TabIndex = 2;
-            this.pictureBox53.TabStop = false;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.BackgroundImage = global::UK_111_Launcher.Properties.Resources.moderator;
-            this.pictureBox35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox35.Location = new System.Drawing.Point(3, 184);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(175, 50);
-            this.pictureBox35.TabIndex = 1;
-            this.pictureBox35.TabStop = false;
-            // 
-            // baltAvatar
-            // 
-            this.baltAvatar.Image = global::UK_111_Launcher.Properties.Resources.baltazar;
-            this.baltAvatar.Location = new System.Drawing.Point(3, 3);
-            this.baltAvatar.Name = "baltAvatar";
-            this.baltAvatar.Size = new System.Drawing.Size(175, 175);
-            this.baltAvatar.TabIndex = 0;
-            this.baltAvatar.TabStop = false;
-            this.baltAvatar.Click += new System.EventHandler(picButtons.baltAvatar_Click);
-            // 
-            // doggersTab
-            // 
-            this.doggersTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.doggersTab.Controls.Add(this.pictureBox72);
-            this.doggersTab.Controls.Add(this.pictureBox54);
-            this.doggersTab.Controls.Add(this.pictureBox36);
-            this.doggersTab.Controls.Add(this.doggersAvatar);
-            this.doggersTab.Location = new System.Drawing.Point(119, 4);
-            this.doggersTab.Name = "doggersTab";
-            this.doggersTab.Size = new System.Drawing.Size(1139, 648);
-            this.doggersTab.TabIndex = 11;
-            this.doggersTab.Text = "Doggers";
-            // 
-            // pictureBox72
-            // 
-            this.pictureBox72.Image = global::UK_111_Launcher.Properties.Resources.moderator_powers;
-            this.pictureBox72.Location = new System.Drawing.Point(3, 296);
-            this.pictureBox72.Name = "pictureBox72";
-            this.pictureBox72.Size = new System.Drawing.Size(525, 349);
-            this.pictureBox72.TabIndex = 3;
-            this.pictureBox72.TabStop = false;
-            // 
-            // pictureBox54
-            // 
-            this.pictureBox54.BackgroundImage = global::UK_111_Launcher.Properties.Resources.powers;
-            this.pictureBox54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox54.Location = new System.Drawing.Point(3, 240);
-            this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(175, 50);
-            this.pictureBox54.TabIndex = 2;
-            this.pictureBox54.TabStop = false;
-            // 
-            // pictureBox36
-            // 
-            this.pictureBox36.BackgroundImage = global::UK_111_Launcher.Properties.Resources.moderator;
-            this.pictureBox36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox36.Location = new System.Drawing.Point(3, 184);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(175, 50);
-            this.pictureBox36.TabIndex = 1;
-            this.pictureBox36.TabStop = false;
-            // 
-            // doggersAvatar
-            // 
-            this.doggersAvatar.Image = global::UK_111_Launcher.Properties.Resources.doggers;
-            this.doggersAvatar.Location = new System.Drawing.Point(3, 3);
-            this.doggersAvatar.Name = "doggersAvatar";
-            this.doggersAvatar.Size = new System.Drawing.Size(175, 175);
-            this.doggersAvatar.TabIndex = 0;
-            this.doggersAvatar.TabStop = false;
-            this.doggersAvatar.Click += new System.EventHandler(picButtons.doggersAvatar_Click);
             // 
             // jasonTab
             // 
@@ -1266,7 +1101,159 @@
             this.jasonAvatar.Size = new System.Drawing.Size(175, 175);
             this.jasonAvatar.TabIndex = 0;
             this.jasonAvatar.TabStop = false;
-            this.jasonAvatar.Click += new System.EventHandler(picButtons.jasonAvatar_Click);
+            // 
+            // josephTab
+            // 
+            this.josephTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.josephTab.Controls.Add(this.pictureBox70);
+            this.josephTab.Controls.Add(this.pictureBox52);
+            this.josephTab.Controls.Add(this.pictureBox34);
+            this.josephTab.Controls.Add(this.josephAvatar);
+            this.josephTab.Location = new System.Drawing.Point(119, 4);
+            this.josephTab.Name = "josephTab";
+            this.josephTab.Size = new System.Drawing.Size(1139, 648);
+            this.josephTab.TabIndex = 9;
+            this.josephTab.Text = "Joseph";
+            // 
+            // pictureBox70
+            // 
+            this.pictureBox70.Image = global::UK_111_Launcher.Properties.Resources.moderator_powers;
+            this.pictureBox70.Location = new System.Drawing.Point(3, 296);
+            this.pictureBox70.Name = "pictureBox70";
+            this.pictureBox70.Size = new System.Drawing.Size(779, 352);
+            this.pictureBox70.TabIndex = 3;
+            this.pictureBox70.TabStop = false;
+            // 
+            // pictureBox52
+            // 
+            this.pictureBox52.BackgroundImage = global::UK_111_Launcher.Properties.Resources.powers;
+            this.pictureBox52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox52.Location = new System.Drawing.Point(3, 240);
+            this.pictureBox52.Name = "pictureBox52";
+            this.pictureBox52.Size = new System.Drawing.Size(175, 50);
+            this.pictureBox52.TabIndex = 2;
+            this.pictureBox52.TabStop = false;
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.BackgroundImage = global::UK_111_Launcher.Properties.Resources.moderator;
+            this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox34.Location = new System.Drawing.Point(3, 184);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(175, 50);
+            this.pictureBox34.TabIndex = 1;
+            this.pictureBox34.TabStop = false;
+            // 
+            // josephAvatar
+            // 
+            this.josephAvatar.Image = global::UK_111_Launcher.Properties.Resources.joseph;
+            this.josephAvatar.Location = new System.Drawing.Point(3, 3);
+            this.josephAvatar.Name = "josephAvatar";
+            this.josephAvatar.Size = new System.Drawing.Size(175, 175);
+            this.josephAvatar.TabIndex = 0;
+            this.josephAvatar.TabStop = false;
+            // 
+            // baltTab
+            // 
+            this.baltTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.baltTab.Controls.Add(this.pictureBox71);
+            this.baltTab.Controls.Add(this.pictureBox53);
+            this.baltTab.Controls.Add(this.pictureBox35);
+            this.baltTab.Controls.Add(this.baltAvatar);
+            this.baltTab.Location = new System.Drawing.Point(119, 4);
+            this.baltTab.Name = "baltTab";
+            this.baltTab.Size = new System.Drawing.Size(1139, 648);
+            this.baltTab.TabIndex = 10;
+            this.baltTab.Text = "BaltazaR";
+            // 
+            // pictureBox71
+            // 
+            this.pictureBox71.Image = global::UK_111_Launcher.Properties.Resources.moderator_powers;
+            this.pictureBox71.Location = new System.Drawing.Point(3, 296);
+            this.pictureBox71.Name = "pictureBox71";
+            this.pictureBox71.Size = new System.Drawing.Size(585, 349);
+            this.pictureBox71.TabIndex = 3;
+            this.pictureBox71.TabStop = false;
+            // 
+            // pictureBox53
+            // 
+            this.pictureBox53.BackgroundImage = global::UK_111_Launcher.Properties.Resources.powers;
+            this.pictureBox53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox53.Location = new System.Drawing.Point(3, 240);
+            this.pictureBox53.Name = "pictureBox53";
+            this.pictureBox53.Size = new System.Drawing.Size(175, 50);
+            this.pictureBox53.TabIndex = 2;
+            this.pictureBox53.TabStop = false;
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.BackgroundImage = global::UK_111_Launcher.Properties.Resources.moderator;
+            this.pictureBox35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox35.Location = new System.Drawing.Point(3, 184);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(175, 50);
+            this.pictureBox35.TabIndex = 1;
+            this.pictureBox35.TabStop = false;
+            // 
+            // baltAvatar
+            // 
+            this.baltAvatar.Image = global::UK_111_Launcher.Properties.Resources.baltazar;
+            this.baltAvatar.Location = new System.Drawing.Point(3, 3);
+            this.baltAvatar.Name = "baltAvatar";
+            this.baltAvatar.Size = new System.Drawing.Size(175, 175);
+            this.baltAvatar.TabIndex = 0;
+            this.baltAvatar.TabStop = false;
+            // 
+            // doggersTab
+            // 
+            this.doggersTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.doggersTab.Controls.Add(this.pictureBox72);
+            this.doggersTab.Controls.Add(this.pictureBox54);
+            this.doggersTab.Controls.Add(this.pictureBox36);
+            this.doggersTab.Controls.Add(this.doggersAvatar);
+            this.doggersTab.Location = new System.Drawing.Point(119, 4);
+            this.doggersTab.Name = "doggersTab";
+            this.doggersTab.Size = new System.Drawing.Size(1139, 648);
+            this.doggersTab.TabIndex = 11;
+            this.doggersTab.Text = "Doggers";
+            // 
+            // pictureBox72
+            // 
+            this.pictureBox72.Image = global::UK_111_Launcher.Properties.Resources.moderator_powers;
+            this.pictureBox72.Location = new System.Drawing.Point(3, 296);
+            this.pictureBox72.Name = "pictureBox72";
+            this.pictureBox72.Size = new System.Drawing.Size(525, 349);
+            this.pictureBox72.TabIndex = 3;
+            this.pictureBox72.TabStop = false;
+            // 
+            // pictureBox54
+            // 
+            this.pictureBox54.BackgroundImage = global::UK_111_Launcher.Properties.Resources.powers;
+            this.pictureBox54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox54.Location = new System.Drawing.Point(3, 240);
+            this.pictureBox54.Name = "pictureBox54";
+            this.pictureBox54.Size = new System.Drawing.Size(175, 50);
+            this.pictureBox54.TabIndex = 2;
+            this.pictureBox54.TabStop = false;
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.BackgroundImage = global::UK_111_Launcher.Properties.Resources.moderator;
+            this.pictureBox36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox36.Location = new System.Drawing.Point(3, 184);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(175, 50);
+            this.pictureBox36.TabIndex = 1;
+            this.pictureBox36.TabStop = false;
+            // 
+            // doggersAvatar
+            // 
+            this.doggersAvatar.Image = global::UK_111_Launcher.Properties.Resources.doggers;
+            this.doggersAvatar.Location = new System.Drawing.Point(3, 3);
+            this.doggersAvatar.Name = "doggersAvatar";
+            this.doggersAvatar.Size = new System.Drawing.Size(175, 175);
+            this.doggersAvatar.TabIndex = 0;
+            this.doggersAvatar.TabStop = false;
             // 
             // kedTab
             // 
@@ -1318,7 +1305,6 @@
             this.kedAvatar.Size = new System.Drawing.Size(175, 175);
             this.kedAvatar.TabIndex = 0;
             this.kedAvatar.TabStop = false;
-            this.kedAvatar.Click += new System.EventHandler(picButtons.kedAvatar_Click);
             // 
             // sempsTab
             // 
@@ -1370,7 +1356,6 @@
             this.sempsAvatar.Size = new System.Drawing.Size(175, 175);
             this.sempsAvatar.TabIndex = 0;
             this.sempsAvatar.TabStop = false;
-            this.sempsAvatar.Click += new System.EventHandler(picButtons.sempsAvatar_Click);
             // 
             // pkTab
             // 
@@ -1422,7 +1407,6 @@
             this.pkAvatar.Size = new System.Drawing.Size(175, 175);
             this.pkAvatar.TabIndex = 0;
             this.pkAvatar.TabStop = false;
-            this.pkAvatar.Click += new System.EventHandler(picButtons.pkAvatar_Click);
             // 
             // xuqiTab
             // 
@@ -1474,7 +1458,6 @@
             this.xuqiAvatar.Size = new System.Drawing.Size(175, 175);
             this.xuqiAvatar.TabIndex = 0;
             this.xuqiAvatar.TabStop = false;
-            this.xuqiAvatar.Click += new System.EventHandler(picButtons.xuqiAvatar_Click);
             // 
             // lillyTab
             // 
@@ -1526,7 +1509,6 @@
             this.lillyAvatar.Size = new System.Drawing.Size(175, 175);
             this.lillyAvatar.TabIndex = 0;
             this.lillyAvatar.TabStop = false;
-            this.lillyAvatar.Click += new System.EventHandler(picButtons.lillyAvatar_Click);
             // 
             // alexTab
             // 
@@ -1578,32 +1560,31 @@
             this.alexAvatar.Size = new System.Drawing.Size(175, 175);
             this.alexAvatar.TabIndex = 0;
             this.alexAvatar.TabStop = false;
-            this.alexAvatar.Click += new System.EventHandler(picButtons.alexAvatar_Click);
             // 
-            // tabPage3
+            // miscTab
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.tabPage3.Controls.Add(this.nsButton15);
-            this.tabPage3.Controls.Add(this.nsButton14);
-            this.tabPage3.Controls.Add(this.nsButton13);
-            this.tabPage3.Controls.Add(this.nsButton12);
-            this.tabPage3.Controls.Add(this.nsOnOffBox4);
-            this.tabPage3.Controls.Add(this.nsOnOffBox3);
-            this.tabPage3.Controls.Add(this.nsOnOffBox2);
-            this.tabPage3.Controls.Add(this.nsOnOffBox1);
-            this.tabPage3.Controls.Add(this.pictureBox82);
-            this.tabPage3.Controls.Add(this.nsSeperator1);
-            this.tabPage3.Controls.Add(this.pictureBox81);
-            this.tabPage3.Controls.Add(this.pictureBox80);
-            this.tabPage3.Controls.Add(this.pictureBox79);
-            this.tabPage3.Controls.Add(this.nsButton11);
-            this.tabPage3.Controls.Add(this.nsButton10);
-            this.tabPage3.Controls.Add(this.nsButton9);
-            this.tabPage3.Location = new System.Drawing.Point(119, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1270, 664);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Miscellaneous";
+            this.miscTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.miscTab.Controls.Add(this.nsButton15);
+            this.miscTab.Controls.Add(this.nsButton14);
+            this.miscTab.Controls.Add(this.nsButton13);
+            this.miscTab.Controls.Add(this.nsButton12);
+            this.miscTab.Controls.Add(this.nsOnOffBox4);
+            this.miscTab.Controls.Add(this.nsOnOffBox3);
+            this.miscTab.Controls.Add(this.nsOnOffBox2);
+            this.miscTab.Controls.Add(this.nsOnOffBox1);
+            this.miscTab.Controls.Add(this.pictureBox82);
+            this.miscTab.Controls.Add(this.nsSeperator1);
+            this.miscTab.Controls.Add(this.pictureBox81);
+            this.miscTab.Controls.Add(this.pictureBox80);
+            this.miscTab.Controls.Add(this.pictureBox79);
+            this.miscTab.Controls.Add(this.nsButton11);
+            this.miscTab.Controls.Add(this.nsButton10);
+            this.miscTab.Controls.Add(this.nsButton9);
+            this.miscTab.Location = new System.Drawing.Point(119, 4);
+            this.miscTab.Name = "miscTab";
+            this.miscTab.Size = new System.Drawing.Size(1270, 664);
+            this.miscTab.TabIndex = 2;
+            this.miscTab.Text = "Miscellaneous";
             // 
             // nsButton15
             // 
@@ -1775,20 +1756,20 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.nsTheme1.ResumeLayout(false);
             this.nsTabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.nsTabControl2.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
+            this.serverTab.ResumeLayout(false);
+            this.serversTab.ResumeLayout(false);
+            this.chernoTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage5.ResumeLayout(false);
+            this.taviTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabPage6.ResumeLayout(false);
+            this.napfTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.tabPage7.ResumeLayout(false);
+            this.exileTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.nsTabControl3.ResumeLayout(false);
+            this.stafflistTab.ResumeLayout(false);
+            this.staffTab.ResumeLayout(false);
             this.sukkTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
@@ -1834,6 +1815,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infAvatar)).EndInit();
+            this.jasonTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jasonAvatar)).EndInit();
             this.josephTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
@@ -1849,11 +1835,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doggersAvatar)).EndInit();
-            this.jasonTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jasonAvatar)).EndInit();
             this.kedTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
@@ -1884,7 +1865,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alexAvatar)).EndInit();
-            this.tabPage3.ResumeLayout(false);
+            this.miscTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
@@ -1897,29 +1878,29 @@
 
         private NSTheme nsTheme1;
         private NSTabControl nsTabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private NSTabControl nsTabControl2;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage serverTab;
+        private NSTabControl serversTab;
+        private System.Windows.Forms.TabPage chernoTab;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TabPage tabPage7;
-        private NSButton nsButton1;
+        private System.Windows.Forms.TabPage taviTab;
+        private System.Windows.Forms.TabPage napfTab;
+        private System.Windows.Forms.TabPage exileTab;
+        private NSButton joinCherno;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private NSButton nsButton2;
-        private NSButton nsButton3;
-        private NSButton nsButton4;
-        private NSButton nsButton5;
-        private NSButton nsButton6;
-        private NSButton nsButton7;
-        private NSButton nsButton8;
+        private NSButton chernoIP;
+        private NSButton joinTavi;
+        private NSButton joinNapf;
+        private NSButton joinExile;
+        private NSButton taviIP;
+        private NSButton napfIP;
+        private NSButton exileIP;
         private NSControlButton nsControlButton1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private NSTabControl nsTabControl3;
+        private System.Windows.Forms.TabPage stafflistTab;
+        private NSTabControl staffTab;
         private System.Windows.Forms.TabPage sukkTab;
         private System.Windows.Forms.PictureBox sukkaedAvatar;
         private System.Windows.Forms.TabPage senTab;
@@ -2009,7 +1990,7 @@
         private System.Windows.Forms.PictureBox pictureBox76;
         private System.Windows.Forms.PictureBox pictureBox77;
         private System.Windows.Forms.PictureBox pictureBox78;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage miscTab;
         private NSButton nsButton10;
         private NSButton nsButton9;
         private NSButton nsButton11;

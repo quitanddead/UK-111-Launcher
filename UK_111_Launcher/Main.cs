@@ -66,49 +66,49 @@ namespace UK_111_Launcher
         }
 
         // Chernarus
-        private void nsButton1_Click(object sender, EventArgs e)
+        private void joinCherno_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(steamPath + a2path + "arma2oa.exe", a2params + a2ip + " -port=" + ports[0]);
         }
 
         // Taviana
-        private void nsButton3_Click(object sender, EventArgs e)
+        private void joinTavi_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(steamPath + a2path + "arma2oa.exe", a2params + a2ip + "-port=" + ports[4]);
         }
 
         // Napf
-        private void nsButton4_Click(object sender, EventArgs e)
+        private void joinNapf_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(steamPath + a2path + "arma2oa.exe", a2params + a2ip + "-port=" + ports[1]);
         }
 
         // Exile
-        private void nsButton5_Click(object sender, EventArgs e)
+        private void joinExile_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(steamPath + a3path + "arma3launcher.exe", a3params + a3ip + "-port=" + ports[0]);
         }
 
         // Chernarus IP
-        private void nsButton2_Click(object sender, EventArgs e)
+        private void chernoIP_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(a2ip + ":" + ports[0]);
         }
 
         // Taviana IP
-        private void nsButton6_Click(object sender, EventArgs e)
+        private void taviIP_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(a2ip + ":" + ports[2]);
         }
 
         // Napf IP
-        private void nsButton7_Click(object sender, EventArgs e)
+        private void napfIP_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(a2ip + ":" + ports[1]);
         }
 
         // Exile IP
-        private void nsButton8_Click(object sender, EventArgs e)
+        private void exileIP_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(a3ip + ":" + ports[0]);
         }
