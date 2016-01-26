@@ -14,18 +14,6 @@ namespace UK_111_Launcher
             System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13245986");
         }
 
-        // Sen
-        public static void senAvatar_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/11501618");
-        }
-
-        // QCube
-        public static void cubeAvatar_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/6043327");
-        }
-
         // Storm
         public static void stormAvatar_Click(object sender, EventArgs e)
         {
@@ -60,12 +48,6 @@ namespace UK_111_Launcher
         public static void infAvatar_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.uk111.uk/profile/13342505");
-        }
-
-        // Joseph
-        public static void josephAvatar_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.uk111.uk/profile/9562369");
         }
 
         // Baltazar
